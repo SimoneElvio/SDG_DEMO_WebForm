@@ -17,4 +17,5 @@ Al suo interno troverai una serie di tabelle.
 ## Configurazione Visual Studio
 Dopo aver effettuato il download del progetto, occorre configurarlo come segue:
 - Web.config: modificare la stringa di connessione inserendo l'utente e la password configurati per l'accesso
-- Nelle proprietà del progetto impostare il framework 4.5
+- nelle proprietà del progetto impostare il framework 4.5
+- settare ___default.aspx___ come pagina di avvio del progetto
