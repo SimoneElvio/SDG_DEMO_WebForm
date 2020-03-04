@@ -1,11 +1,11 @@
 # SDG_DEMO_WebForm
 
-##Requisiti software
+## Requisiti software
 
 - Visual Studio 2015
 - SQL Server 2015 (o successivo)
 
-##Configurazione database
+## Configurazione database
 
 Scarica il file .zip dalla cartella ***database*** ed esegui il restore in SQL Server.
 
@@ -14,7 +14,7 @@ Al suo interno troverai una serie di tabelle.
 - Errori: tracciamento errori
 - Utenti: anagrafica utenti
 
-##Configurazione Visual Studio
+## Configurazione Visual Studio
 Dopo aver effettuato il download del progetto, occorre configurarlo come segue:
 - Web.config: modificare la stringa di connessione inserendo l'utente e la password configurati per l'accesso
 - Nelle proprietà del progetto impostare il framework 4.5
