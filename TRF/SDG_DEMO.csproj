@@ -141,7 +141,6 @@
   <ItemGroup>
     <Content Include="bin\AjaxControlToolkit.dll" />
     <Content Include="bin\AjaxMin.dll" />
-    <Content Include="bin\App_Licenses.dll" />
     <Content Include="bin\AutoMapper.dll" />
     <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
     <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
