@@ -1,0 +1,137 @@
+/***** Global Settings *****/
+
+html, body {border:0;margin:0;padding:0;height:100%;}
+html{font-size:100%;} /*16px*/
+body{font-size:68%;font-family: Verdana, Arial; color: #000; margin:0;} /*62.5%=10px - 68%=11px - 75%=12px*/
+
+
+/*Stile per messaggi di errore nella pagina*/
+/*
+.boxError {	border:3px solid #b21206;background: #F1D0CD;color: #000;margin:10px 20px 10px 20px;padding:5px;clear:both;}
+.boxError h3 {width:80%;  height:20px; font-weight:bold;}
+.boxError p { width:80%; }
+.boxError a { float:right; text-decoration:none; }
+.boxError span {float:left; background: url(/Web/Images/error.png) no-repeat left; width:30px; height:20px; display:block; }
+*/
+.boxError {	border-left:1px solid #f9d6dc;background: #f9d6dc; color: #666;margin:10px 20px 10px 20px;padding:5px;clear:both;}
+.boxError h3 {width:80%;  height:20px; font-weight:bold; border-bottom:1px solid #f9d6dc;}
+.boxError p { width:80%; }
+.boxError a { float:right; text-decoration:none; }
+.boxError span {float:left; background: url(/Web/Images/error.png) no-repeat left; width:30px; height:20px; display:block; }
+
+/***** Headings *****/
+
+h1, h2, h3, h4, h5, h6 {margin:0;padding:0;font-weight:normal;}
+
+h1 {font-size:1.4em; color:#C00; font-family:Georgia; font-style:italic; font-weight:bold; float:left;}
+
+/*#LabelTitoloEditor{margin-bottom:15px;border:1px solid silver;display:block;background:#e1e1e1}*/
+
+
+h2 {font-size:1.1em;font-weight:bold;color:gray}
+h3 {font-size:1em;}
+
+/***** Common Formatting *****/
+
+p, ul, ol, li {margin:0;padding:0 0 0 0;}
+p {margin-bottom:5px;}
+
+ul, ol {padding:0 0 1.25em 2.5em;}
+
+blockquote {margin:1.25em;padding:1.25em 1.25em 0 1.25em;}
+
+small {font-size:0.85em;}
+
+img {border:0;}
+
+sup {position:relative;bottom:0.3em;vertical-align:baseline;}
+
+sub {position:relative;bottom:-0.2em;vertical-align:baseline;}
+
+acronym, abbr {cursor:help;letter-spacing:1px;border-bottom:1px dashed;}
+
+/***** Links *****/
+
+a,a:link,a:visited {text-decoration:underline;color:#000;}
+a:hover {text-decoration:underline;cursor:pointer;color:#000;}
+
+/***** Forms *****/
+
+form {margin:0;padding:0;display:inline;}
+input, select, textarea {font:1.0em Verdana, Arial, sans-serif;}
+select {}
+textarea {line-height:1.25;}
+/*label {cursor:pointer;}*/
+hr {color: #013874;height:1px;line-height:1px;}
+/*h1{background:url(/Web/Images/gold.gif) no-repeat right;}*/
+
+/***** Tables *****/
+
+/*
+table {width:100%;}
+table {border:0px solid #666;border-collapse: collapse;margin:0 0 1.25em 0;padding:0;width:720px;}
+table th {padding:2px;height:20px; border:0; border-bottom:6px solid #F1F1F1; border-left:1px solid #F1F1F1 ; color:#013874;background: #FFF url(/Web/Images/bkg_th.png1);text-align:left; }
+th img {border:0px;margin:0 0 2px 10px;}
+th span {cursor:pointer;}
+td span {cursor:pointer;}
+table tr {padding:2px;border:0px solid #F1F1F1;height:18px;}
+table td {padding:2px;border:2px solid #F1F1F1;height:18px;}
+table tr.d1 td {background-color: #eee;}
+table tr.d0 td {background-color: #e1e1e1;}
+tbody tr:hover td {background-color: #ECF0F3;}
+caption{color: #013874;font-weight:bold;height:25px;text-align:left;margin-top:15px;}
+
+table a,table a:link,table a:visited, table a:hover {text-decoration:underline;color:#C5160C}
+*/
+/***** Wrapper *****/
+
+/*sito centrato nella pagina
+#wrap {width:960px;margin:0 auto;}
+*/
+
+/*#wrap {width:100%;margin:0 auto;}*/
+
+/*Stile impostazioni di default del WebDialogWindow */
+/*#editorDialog {width:96%; top:42px; left:2%; height:560px;}*/
+
+#wrap,#wrapEditor {width:100%;padding:0;margin:0;min-height:100%;} /*position:relative;*/
+
+#wrap{width:98%;}
+#bodymainpage #wrap{width:100%;}
+/*#bodymainpage #wrap{background: url(/Web/Images/logo.jpg) no-repeat left bottom}*/
+
+#page_height{padding:0 0 0;margin:0;}
+
+/***** Global Classes *****/
+
+.off-left		{left: -9999px;top:-9999px;position: absolute;}
+.invisibile		{display: none;}
+
+.displayNone	{display: none;}
+.displayBlock	{display: block;}
+.displayInline	{display: inline;}
+.clear			{clear:both; }
+.float-left		{float:left; }
+.float-right	{float:right; }
+.text-left		{text-align:left; }
+.text-right		{text-align:right; }
+.text-center	{text-align:center; }
+.text-justify	{text-align:justify; }
+.bold			{font-weight:bold; }
+.italic			{font-style:italic; }
+.underline		{border-bottom:1px solid; }
+.highlight		{background:#ffc; }
+.wrap			{width:960px;margin:0 auto; }
+.img-left		{float:left;margin:4px 10px 4px 0; }
+.img-right		{float:right;margin:4px 0 4px 10px; }
+.nopadding		{padding:0; }
+.noindent		{margin-left:0;padding-left:0; }
+.nobullet		{list-style:none;list-style-image:none; }
+.scrollable     {overflow:scroll; }
+.changed        {color: Blue; }
+.miniMarginLeft {margin-left:2px}
+.capitalize		{text-transform:capitalize;}
+
+/*la classe sotto viene utilizzata per i campi dummy dell'inserimento dei singoli servizi della richiesta viaggio */
+.displayLost   { border:solid 1px #fff; position:absolute; left:-2000px;}
+                  

@@ -1,0 +1,18 @@
+﻿/*--------------------------------
+
+NOTA:
+Ogni modifica effettuata in questo file deve essere allineata in fck_editorarea.css
+per essere correttamente visualizzata anche in fase di modifica dei testi.
+
+--------------------------------*/
+
+#content h1 {color:#7598c4; font-size:1.5em; font-weight:bold; border-bottom:1px solid #ccc;}
+#content h2 {color:#999999; font-size:1.2em; font-weight:bold; padding-top:10px; }
+#content h3 a {color:#eea752; font-size:1.2em; font-weight:bold; padding-top:10px; cursor:default; text-decoration:none;}
+#content h4 {color:#000;}
+#content h5 {color:#000;}
+#content h6 {color:#000;}
+
+#content li {width:auto;}
+#content li a {color:#0560A6;}
+	

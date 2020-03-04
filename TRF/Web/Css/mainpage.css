@@ -1,0 +1,35 @@
+﻿/* --- Stili specifici per Top ---*/
+#top {height: 78px;color: #000;padding-right:0px;padding-bottom:0;border-bottom:1px solid #ccc;}
+#top a {color: #000; font-size:1em; text-decoration:none;}
+#top a:hover {text-decoration:underline;}
+#top a.utenteCollegato:hover {text-decoration:none;cursor:default}
+#top h1 {display:none}
+#status{float:left;margin:60px 0 0 5px;}
+#topUtente{float:right; text-align:right;width:608px; height:58px; padding:8px;display:block}
+#TopUtenteAltro{float:right;margin-top:5px;width:400px;text-align:right;padding-right:0;}
+.ultimoAccesso {font-size:0.8em;}
+#divManutenzione{float:left;border:1px solid red;margin-top:10px;width:300px;color:red}
+
+#credits {font-size:0.8em;}
+
+#logo {float:left; cursor:pointer}
+
+#LinkHome {background:red url(/Web/Images/bkg_button_top.jpg) no-repeat; width:46px; height:16px}
+
+.tableMenu{width:100%;}
+.mainMenu {background-image: url(/Web/Images/background_menu.jpg);color: #fff;margin: -1px 0 0;padding:0;}
+.vociMenu {height: 13px;color: #fff;vertical-align: middle;background-image: url(/Web/Images/menu.gif);}
+
+/* --- stili per la barra posta sotto la Top --- */
+#subTop {display:none; background:#fff; width:200px; height:17px; } /*background:#e1e1e1;*/
+#titleMenu{display:none;background:#fff;width:184px;float:left;padding:0px 0 0 10px;color:#ccc;height:17px;} /*background:#ccc;height:22px;*/
+
+#subTopMenu {display:none;float:right; padding-top:5px; margin-right:10px;}
+#subTopMenu input{float:right; margin-left:10px;}
+
+#divLoading{background:#fff url(/Web/Images/loading.gif) center 100px no-repeat;display:none;width:100%;text-align:center;border:0;z-index:999;margin:auto;position:absolute;top:0;filter: alpha(opacity : 70);opacity: 0.7;font-size:2em;font-weight:bold}
+#divLoading div{margin-top:300px}
+
+.divBack{z-index:1000;width:100px;position:absolute;color:#186CAC;font-size:12px;font-weight:bold;cursor:pointer;text-decoration:underline;}
+
+#Top1_logo{background:url(/Web/Images/top_TAF.png) no-repeat; float:left; width:321px; height:78px;cursor:pointer }

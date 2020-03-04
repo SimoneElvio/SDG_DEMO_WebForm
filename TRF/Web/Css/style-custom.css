@@ -1,0 +1,1340 @@
+﻿.topbar .top-navbar {
+    max-width: 95%;
+}
+/*.sidebar-nav {max-width:95%;}*/
+.scroll-sidebar {
+    max-width: 95%;
+}
+
+.container-big {
+    max-width: 95%;
+}
+
+.rss {
+    font-size: 0.9rem;
+}
+
+    .rss p {
+        font-size: 0.8rem;
+    }
+
+    .rss a {
+    }
+
+    .rss small {
+        margin-top: 10px;
+        padding-top: 15px;
+        display: block;
+        border-top: 1px solid #ddd;
+    }
+
+    .rss h4 {
+        border-bottom: 1px solid #ddd;
+    }
+
+.table {
+    font-size: 0.95rem;
+}
+
+    .table th {
+        color: #fff;
+    }
+
+        .table th a {
+            color: #fff;
+        }
+
+    .table i {
+        font-size: 1rem;
+    }
+
+.table-hover tbody tr:hover {
+    background: #C4DAE7 !important;
+}
+
+.color-table.success-table thead, .card-header, .table th {
+    background: #0178bc;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #0178bc 0%, #00bdda 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #0178bc 0%, #00bdda 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to top, #0178bc 0%, #00bdda 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+/*.color-table.success-table thead th {background-color: #359393;}*/
+
+.GridViewPaginationLink {
+    background: #fff !important;
+    border: 0;
+}
+
+    .GridViewPaginationLink :hover {
+        background: #fff;
+    }
+
+    .GridViewPaginationLink td {
+        padding: 0;
+        border: 1px solid #fff;
+        background: #fff;
+        padding-top: 5px;
+    }
+
+    .GridViewPaginationLink span, .GridViewPaginationLink table td span:hover {
+        color: #fff;
+        background-color: #009efb;
+        border-radius: 4px;
+        padding: 5px 10px;
+        display: block;
+    }
+
+    .GridViewPaginationLink a {
+        color: #000;
+        background: #fff;
+        padding: 5px 10px;
+        display: block;
+    }
+
+        .GridViewPaginationLink a:hover {
+            color: #fff;
+            background-color: #009efb;
+            border-radius: 4px;
+        }
+
+#headerBrowser, .headerBrowser {
+    font-size: 0.8rem;
+}
+
+.selectedRowGridView {
+    background: #ccc;
+}
+
+.giallo {
+    color: #fec723;
+}
+
+.rosso {
+    color: #e60d00;
+}
+
+.verde {
+    color: #26990a;
+}
+
+.shw-rside {
+    width: 300px;
+}
+
+.right-sidebar-servizi.shw-rside {
+    width: 100px;
+}
+
+.right-sidebar-servizi button {
+    background: #fff;
+    border: 1px solid #cfecfe;
+}
+
+    .right-sidebar-servizi button:hover {
+        background: #cfecfe;
+    }
+/*#0178bc;}*/
+
+.btnRicerca, .btnLog, .btnServizi {
+    cursor: pointer;
+}
+
+#boxRicercaAvanzata input, #boxRicercaAvanzata select {
+    margin-bottom: 5px;
+}
+
+.r-panel-body, .r-panel-body input, .r-panel-body select {
+    font-size: 0.8rem;
+}
+
+.bootstrap-switch {
+    /*margin-top: 5px;*/
+}
+
+    .bootstrap-switch i {
+        width: 25px;
+    }
+
+.boxRight {
+    font-size: 0.9rem;
+}
+
+    .boxRight .form-control {
+        font-size: 0.9rem;
+    }
+
+    .boxRight .form-group {
+        margin-bottom: 10px;
+    }
+
+.logoCliente {
+    /*width:40px; margin-top:-10px; -- solo per il logo SDG*/
+    width: 170px;
+    margin-top: -10px;
+}
+
+.page-titles {
+    padding-top: 20px;
+}
+
+#DropDownListRecordPagina.custom-select,
+#DropDownListRecPaginaRuoloUtente.custom-select,
+#DropDownListRecPaginaAutorizzatori.custom-select,
+#DropDownListRecPaginaWfAssociati.custom-select,
+#DropDownListRecPaginaCliAssociati.custom-select,
+#DropDownListRecPaginaFunzionalita.custom-select,
+#DropDownListRecPaginaUtentiRuolo.custom-select {
+    height: 30px;
+    width: 80px;
+}
+
+.fa-plane, .fa-hotel, .fa-car, .fa-train, .fa-ship, .fa-database, .fa-graduation-cap, .fa-coffee, .fa-bed {
+    cursor: pointer;
+}
+
+h4 {
+    margin: 0;
+}
+
+#tblRegistroEventi div {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 5px 0 10px;
+}
+
+#tblRegistroEventi  img {
+    max-width: 100px;
+    max-height: 100px;
+    cursor: zoom-in;
+}
+
+.card-header h4 {
+    color: #fff;
+}
+
+.card-header i {
+    margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+    .modal-xl {
+        width: 90%;
+        max-width: 1200px;
+    }
+}
+
+.popover-header {
+    padding: 0 14px;
+}
+
+    .popover-header hr {
+        margin: 5px 0;
+    }
+
+.popover-body {
+    font-size: 0.7rem;
+}
+
+#trMessage {
+    font-size: 0.9rem;
+}
+
+    #trMessage h3 {
+        font-size: 1.1rem;
+    }
+
+#txtLastMessage {
+    padding: 0;
+}
+#txtLastMessage img{
+    max-width: 100px;
+    max-height: 100px;
+    cursor: zoom-in;
+}
+
+#servizi .list-group-item:hover, #dettagliVolo .list-group-item:hover, #dettagliViaggio .list-group-item:hover {
+    background: #fff; /*border-left:3px solid #009efb; border-right:1px solid #fff;*/
+    cursor: pointer;
+}
+
+#servizi .list-group-item, #dettagliVolo .list-group-item, #dettagliViaggio .list-group-item {
+    border-left: 3px solid #fff;
+    border-right: 1px solid #fff;
+    min-height: 90px;
+}
+
+    #servizi .list-group-item .text-info, #dettagliVolo .list-group-item .text-info, #dettagliViaggio .list-group-item .text-info {
+        cursor: pointer;
+    }
+/*#servizi i:first-child {padding-left:5px}*/
+
+#iframeNewService {
+    width: 100%;
+    border: 1px solid #0178bc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Elenco servizi */
+.action {
+    display: none;
+    border-right: 1px solid #e1e1e1;
+}
+
+    .action i {
+        width: 40px;
+        height: 40px; /*color:#fff !important;*/
+        cursor: pointer;
+    }
+
+    .action .fa-ticket { /*background-color: #666;*/
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .action .fa-pencil { /*background-color: #009efb;*/
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .action .fa-trash { /*background-color:red;*/
+        text-align: center;
+        padding-top: 12px;
+    }
+
+    .action .fa-history { /*background-color: #009efb;*/
+        text-align: center;
+        padding-top: 12px;
+    }
+
+.list-group-item.rev {
+    padding-top: 0;
+    border-top: 1px solid #fff;
+}
+
+.rev {
+    display: none;
+    background-color: #666;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+    .rev:hover {
+        background-color: #747170 !important;
+    }
+
+    .rev i {
+        color: #fff !important;
+    }
+
+.linkRev {
+    cursor: pointer;
+}
+
+/* Finestra modale */
+.modal-header {
+    background: #e1e1e1;
+    padding: 5px 15px 5px 0px;
+}
+
+/* Dropdown ricerca */
+.div-search {
+    margin-top: 0px;
+    background: #fff;
+    position: absolute;
+    z-index: 999;
+    background: #666;
+    width: 90%;
+    display: none;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    border-top: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+    .div-search ul {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .div-search li {
+        background: #fff;
+        border-top: 1px solid #ddd;
+        list-style-position: inside;
+        list-style-type: none;
+        cursor: pointer;
+        height: 35px;
+        padding: 5px 0 0 10px;
+        text-transform: capitalize;
+    }
+        /*.div-search ul > li:first-child {
+        background: #ddd;
+        color: #000;
+    }*/
+
+        .div-search li.selected {
+            background: #009efb;
+            color: #fff;
+        }
+
+        .div-search li:hover {
+            background: #009efb;
+            color: #fff;
+        }
+
+.txt-search {
+    text-transform: capitalize;
+}
+
+#divViaggiatore .div-search {
+    clear: both;
+    margin-top: 38px;
+}
+
+
+.box-ico {
+    float: left;
+    position: relative;
+}
+/*
+.profile-status {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;    
+    border: 2px solid #fff;
+    left: 16px;
+    display: inline-block;
+    top:-3px;
+}
+*/
+/*.profile-status.status-0 {background: #e1e1e1;}*/ /* .. */
+/*.profile-status.status-1 {background: green;}*/ /* prenotato */
+/*.profile-status.status-2 {background: orange;}*/ /* modificato */
+/*.profile-status.status-3 {background: red;}*/ /* cancellato */
+
+.popover-status-0 {
+    border-left: 3px solid #e1e1e1;
+    padding-left: 3px;
+}
+/* .. */
+.popover-status-1 {
+    border-left: 3px solid green;
+    padding-left: 3px;
+}
+/* prenotato */
+.popover-status-2 {
+    border-left: 3px solid orange;
+    padding-left: 3px;
+}
+/* modificato */
+.popover-status-3 {
+    border-left: 3px solid red;
+    padding-left: 3px;
+}
+/* cancellato */
+
+.stato-rich-37 {
+    background: #cfecfe;
+}
+/*In Modifica Richiedente*/
+
+#divButton input {
+    margin: 0 auto 5px;
+    width: 100%;
+}
+
+/* Browser Richieste */
+
+.divRichiestaLeft {float:left; width:66%;}
+.divRichiestaRight {float:right; width:33%; border-left: 1px dashed #ddd;}
+.divRichiestaRight span {display: block; text-align:right}
+.divRichiestaRight i {float:right;margin-left: 5px !important; color:#009EFB !important; background:#fff;/*CCEBFE*/ width:30px; height:30px; text-align:center; padding-top:5px; border-radius:3px; font-size:1.3rem}
+.spanCodice {font-weight: 400; color: #009EFB; font-size:1.1rem; }
+.spanViaggiatore {font-size: 0.8rem; color: #666;}
+.spanStato {font-size: 0.8rem; color: #666; clear:both}
+.spanPrezzo {font-size: 1.2rem; color: #009EFB;}
+.spanData{float:right; color: #009EFB; padding-top:10px}
+
+.divRichiesta {background: #fff; border-radius:5px; margin:0; padding:5px; box-shadow:0 1px 3px 0 rgba(37,32,31,.3)}
+
+#filterAlert {
+    background-color: #cfecfe;
+    -webkit-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    color: #0178bc;
+    display: inline-block;
+    float: right;
+    height: 40px;
+    margin-top: -16px;
+    padding-right: 10px;
+}
+
+    #filterAlert div {
+        cursor: pointer;
+        font-size: 0.8em;
+        float: right;
+        margin-left: 15px;
+        margin-top: 10px;
+        text-align: right;
+    }
+
+        #filterAlert div div {
+            background: #009efb; /*#0178bc;*/
+            border-radius: 5px;
+            color: #fff;
+            font-size: 0.8em;
+            font-weight: 400;
+            height: 16px;
+            margin-left: 5px;
+            margin-top: 2px;
+            text-align: center;
+            min-width: 16px;
+            padding: 1px 2px;
+        }
+
+    #filterAlert .clearFilter {
+        border-left: 1px solid #009efb;
+        color: #009efb;
+        padding-left: 8px;
+    }
+
+.linkRichiesta {
+    color: #009efb;
+    cursor: pointer;
+}
+
+button.close {
+    cursor: pointer;
+}
+
+.stato-0 {
+}
+
+.stato-1 {
+}
+
+.stato-2.rev {
+    background: #666;
+}
+
+.stato-2, .stato-3,
+#servizi .list-group-item.stato-2:hover, #servizi .list-group-item.stato-3:hover {
+    background: repeating-linear-gradient( 45deg, #f1f1f1, #f1f1f1 10px, #fff 10px, #fff 20px );
+}
+
+.list-group-item.stato-2.rev:hover {
+    background: #747170 !important;
+}
+
+.stato-3 {
+}
+
+.rev i.text-secondary {
+    color: #fff !important;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#mseSrv .page-wrapper {
+    background: #fff;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#mseSrv .form-group {
+    margin-bottom: 10px;
+}
+
+#mseSrv h3 {
+    color: #fff;
+}
+
+#mseSrv .card-body {
+    padding: 10px 0 0;
+}
+
+/* button editor */
+#Menu_divButtonMenu {
+    margin-top: -7px;
+}
+
+.fa-size20 {
+    font-size: 20px;
+}
+
+.c-pointer {
+    cursor: pointer;
+}
+
+/******************* 
+Footer
+*******************/
+footer {
+    padding: 5px 0;
+}
+
+.footerSDG {
+    float: left;
+    font-size: 0.8em;
+    margin-top: 7px;
+    text-align: left;
+    width: 45%;
+}
+
+.footerCliente {
+    width: 45%;
+    float: right;
+    text-align: right;
+}
+
+    .footerCliente img {
+        max-height: 30px;
+    }
+    .footerLinkMissyo {
+        font-size:0.8em;
+    }
+
+/******************* 
+Backoffice
+*******************/
+
+.colBtn {
+    width: 20px;
+}
+
+h3 {
+    color: #009efb !important;
+    margin: 0;
+}
+
+.h5TravelPolicy {
+    color: #009efb !important;
+    margin: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+/******************* 
+Bootstrap
+*******************/
+
+.offset-1 {
+    margin-left: 8.333333%;
+}
+
+.offset-2 {
+    margin-left: 16.666667%;
+}
+
+.offset-3 {
+    margin-left: 25%;
+}
+
+.offset-4 {
+    margin-left: 33.333333%;
+}
+
+.offset-5 {
+    margin-left: 41.666667%;
+}
+
+.offset-6 {
+    margin-left: 50%;
+}
+
+.offset-7 {
+    margin-left: 58.333333%;
+}
+
+.offset-8 {
+    margin-left: 66.666667%;
+}
+
+.offset-9 {
+    margin-left: 75%;
+}
+
+.offset-10 {
+    margin-left: 83.333333%;
+}
+
+.offset-11 {
+    margin-left: 91.666667%;
+}
+
+@media (min-width: 576px) {
+    .offset-sm-0 {
+        margin-left: 0;
+    }
+
+    .offset-sm-1 {
+        margin-left: 8.333333%;
+    }
+
+    .offset-sm-2 {
+        margin-left: 16.666667%;
+    }
+
+    .offset-sm-3 {
+        margin-left: 25%;
+    }
+
+    .offset-sm-4 {
+        margin-left: 33.333333%;
+    }
+
+    .offset-sm-5 {
+        margin-left: 41.666667%;
+    }
+
+    .offset-sm-6 {
+        margin-left: 50%;
+    }
+
+    .offset-sm-7 {
+        margin-left: 58.333333%;
+    }
+
+    .offset-sm-8 {
+        margin-left: 66.666667%;
+    }
+
+    .offset-sm-9 {
+        margin-left: 75%;
+    }
+
+    .offset-sm-10 {
+        margin-left: 83.333333%;
+    }
+
+    .offset-sm-11 {
+        margin-left: 91.666667%;
+    }
+
+    #filterAlert {margin-top:46px;}
+}
+
+@media (min-width: 768px) {
+    .offset-md-0 {
+        margin-left: 0;
+    }
+
+    .offset-md-1 {
+        margin-left: 8.333333%;
+    }
+
+    .offset-md-2 {
+        margin-left: 16.666667%;
+    }
+
+    .offset-md-3 {
+        margin-left: 25%;
+    }
+
+    .offset-md-4 {
+        margin-left: 33.333333%;
+    }
+
+    .offset-md-5 {
+        margin-left: 41.666667%;
+    }
+
+    .offset-md-6 {
+        margin-left: 50%;
+    }
+
+    .offset-md-7 {
+        margin-left: 58.333333%;
+    }
+
+    .offset-md-8 {
+        margin-left: 66.666667%;
+    }
+
+    .offset-md-9 {
+        margin-left: 75%;
+    }
+
+    .offset-md-10 {
+        margin-left: 83.333333%;
+    }
+
+    .offset-md-11 {
+        margin-left: 91.666667%;
+    }
+
+    #filterAlert {margin-top:46px;}
+}
+
+@media (min-width: 992px) {
+    .offset-lg-0 {
+        margin-left: 0;
+    }
+
+    .offset-lg-1 {
+        margin-left: 8.333333%;
+    }
+
+    .offset-lg-2 {
+        margin-left: 16.666667%;
+    }
+
+    .offset-lg-3 {
+        margin-left: 25%;
+    }
+
+    .offset-lg-4 {
+        margin-left: 33.333333%;
+    }
+
+    .offset-lg-5 {
+        margin-left: 41.666667%;
+    }
+
+    .offset-lg-6 {
+        margin-left: 50%;
+    }
+
+    .offset-lg-7 {
+        margin-left: 58.333333%;
+    }
+
+    .offset-lg-8 {
+        margin-left: 66.666667%;
+    }
+
+    .offset-lg-9 {
+        margin-left: 75%;
+    }
+
+    .offset-lg-10 {
+        margin-left: 83.333333%;
+    }
+
+    .offset-lg-11 {
+        margin-left: 91.666667%;
+    }
+
+    #filterAlert {margin-top:10px;}
+}
+
+@media (min-width: 1200px) {
+    .offset-xl-0 {
+        margin-left: 0;
+    }
+
+    .offset-xl-1 {
+        margin-left: 8.333333%;
+    }
+
+    .offset-xl-2 {
+        margin-left: 16.666667%;
+    }
+
+    .offset-xl-3 {
+        margin-left: 25%;
+    }
+
+    .offset-xl-4 {
+        margin-left: 33.333333%;
+    }
+
+    .offset-xl-5 {
+        margin-left: 41.666667%;
+    }
+
+    .offset-xl-6 {
+        margin-left: 50%;
+    }
+
+    .offset-xl-7 {
+        margin-left: 58.333333%;
+    }
+
+    .offset-xl-8 {
+        margin-left: 66.666667%;
+    }
+
+    .offset-xl-9 {
+        margin-left: 75%;
+    }
+
+    .offset-xl-10 {
+        margin-left: 83.333333%;
+    }
+
+    .offset-xl-11 {
+        margin-left: 91.666667%;
+    }
+
+    #filterAlert {margin-top:-16px;}
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+/* CALENDAR*/
+#ui-datepicker-div {
+    font-family: Rubik;
+}
+
+.ui-datepicker-trigger {
+    cursor: pointer;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin-left: 15px;
+}
+
+    .ui-datepicker-trigger img {
+        display: none;
+    }
+
+input.datepicker {
+    float: left;
+    width: 90%;
+}
+
+@media (max-width:767px) and (min-width:320) {
+    .card-header:first-child {
+        display: none;
+    }
+}
+
+/*Inizio Stili per text box con icone*/
+
+.input-container-with-icon {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 6px;
+}
+
+
+.icon-input-text {
+    padding: 10px;
+    background: linear-gradient(to top, #0178bc 0%, #00bdda 100%);
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+
+.input-field-with-icon {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin-right: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+/*Fine Stili per text box con icone*/
+
+/* stile stelle hotel*/
+
+.starsHotel {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.starsSelectHotel {
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+/* fine stile stelle hotel*/
+
+
+.labelDescrTravelPolicy {
+    font-weight: bold;
+}
+
+.fontsizeTravelPolicy {
+    font-size: 0.9rem;
+}
+
+.listEccezioni {
+    cursor: pointer;
+}
+
+/* Elenco servizi */
+#servizi li, #dettagliVolo li, #dettagliViaggio li {
+    box-shadow: 0 1px 4px 0 rgba(37,32,31,.2);
+    margin: 5px 0;
+    border-radius: 8px;
+}
+
+    #servizi li:hover, #dettagliVolo li:hover, #dettagliViaggio li:hover {
+        box-shadow: 0 3px 5px 0px rgba(37,32,31,.3);
+    }
+
+    #servizi li .row, #dettagliVolo li .row {
+        margin: 0 -20px;
+    }
+
+#servizi small, #dettagliVolo small, #dettagliViaggio small {
+    font-size: 0.7rem;
+}
+
+#servizi .divServiceLeft, #dettagliVolo .divServiceLeft ,#dettagliViaggio .divServiceLeft {
+    width: 10%;
+}
+
+#servizi .divServiceMiddle, #dettagliVolo .divServiceMiddle, #dettagliViaggio .divServiceMiddle {
+    width: 65%;
+    border-right: 1px dashed #ddd;
+    padding-left: 10px;
+}
+
+#servizi .divServiceRight {
+    width: 25%;
+    padding-left: 5px;
+}
+
+    #servizi .divServiceRight h3 {
+        width:50%;
+        float: left;
+    }
+
+    #servizi .divServiceRight input {
+        margin-right: 10px;
+        float: right;
+    }
+
+#dettagliVolo .divServiceRight, #dettagliViaggio .divServiceRight {
+    width: 25%;
+    padding-left: 40px;
+}
+
+    #dettagliVolo .divServiceRight .btn, #dettagliViaggio .divServiceRight .btn {
+        padding: 4px 10px;
+    }
+
+    #servizi .divServiceRight h3, #dettagliVolo .divServiceRight h3, #dettagliViaggio .divServiceRight h3 {
+        padding-bottom: 10px;
+        font-size:18px;
+    }
+
+#servizi .divServiceLeft img {
+    width: 40px;
+    margin-left: 20px;
+}
+
+#servizi .divServiceMiddle img, #dettagliVolo .divServiceLeft img, #dettagliVolo .divServiceMiddle img, #dettagliViaggio .divServiceLeft img, #dettagliViaggio .divServiceMiddle img {
+    width: 40px;
+    margin-left: 20px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+}
+
+#servizi .divServiceMiddle img, #dettagliVolo .divServiceMiddle img, #dettagliViaggio .divServiceMiddle img {
+    margin-left: 0;
+}
+
+#servizi .divServiceMiddle .flightNo, #dettagliVolo .divServiceMiddle .flightNo, #dettagliViaggio .divServiceMiddle .flightNo  {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+#servizi .divServiceMiddle .itemDetail, #dettagliVolo .divServiceMiddle .itemDetail, #dettagliViaggio .divServiceMiddle .itemDetail {
+    clear: both;
+    padding: 10px 0;
+    width: 55%;
+    margin: 0 auto;
+}
+
+#servizi .divServiceMiddle .itemDetailTimeSpan, #dettagliVolo .divServiceMiddle .itemDetailTimeSpan, #dettagliViaggio .divServiceMiddle .itemDetailTimeSpan {
+    float: left;
+    width: 30%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#servizi .divServiceMiddle .itemDetailFlight, #dettagliVolo .divServiceMiddle .itemDetailFlight , #dettagliViaggio .divServiceMiddle .itemDetailFlight{
+    float: left;
+    width: 70%;
+    border-left: 1px solid #ddd;
+    padding-left: 10px;
+}
+
+
+
+#servizi .divServiceLeft i, #dettagliVolo .divServiceLeft i ,  #dettagliViaggio .divServiceLeft i{
+    font-size: 20px;
+    margin-left: 30px;
+    background-color: #fff;
+}
+
+#servizi .divServiceMiddle, #dettagliVolo .divServiceMiddle, #dettagliViaggio .divServiceMiddle {
+    font-size: 0.9rem;
+}
+
+    #servizi .divServiceMiddle .text-info, #dettagliVolo .divServiceMiddle .text-info, #dettagliViaggio .divServiceMiddle .text-info {
+        font-size: 1rem;
+    }
+
+    #servizi .divServiceMiddle .txtNote, #dettagliVolo .divServiceMiddle .txtNote,  #dettagliViaggio .divServiceMiddle .txtNote {
+        display: block;
+        margin-top: 10px;
+        width: 95%;
+        font-size: 0.8rem;
+    }
+    /*
+.divServiceLeft.servHot {width:10%;}
+.divServiceMiddle.servHot {width:65%;}
+.divServiceLeft.servHot img {width:100px; border-radius:0;}
+*/
+
+    #servizi .divServiceMiddle.servHot .fa-star, #dettagliVolo .divServiceMiddle.servHot .fa-star,  #dettagliViaggio .divServiceMiddle.servHot .fa-star {
+        color: #feba02;
+        font-size: small;
+    }
+
+#servizi .divServiceRight label.text-info,
+#servizi .divServiceRight label.text-danger,
+#servizi .divServiceRight label.text-success,
+#dettagliVolo .divServiceRight label.text-info,
+#dettagliViaggio .divServiceRight label.text-info,
+#dettagliVolo .divServiceRight label.text-danger,
+#dettagliViaggio .divServiceRight label.text-danger,
+#dettagliVolo .divServiceRight label.text-success, 
+#dettagliViaggio .divServiceRight label.text-success {
+    font-size: 1.3rem;
+    float: left;
+    display: block;
+    width: 120px;
+}
+
+#servizi .divServiceRight small.text-info,
+#servizi .divServiceRight small.text-danger,
+#servizi .divServiceRight small.text-success, 
+#dettagliVolo .divServiceRight small.text-info,
+#servizi .divServiceRight small.text-success, 
+#dettagliViaggio .divServiceRight small.text-info,
+#dettagliVolo .divServiceRight small.text-danger,
+#dettagliViaggio .divServiceRight small.text-danger,
+#dettagliVolo .divServiceRight small.text-success, 
+#dettagliViaggio .divServiceRight small.text-success {
+    clear: both;
+    float: left;
+    font-size: 0.7rem;
+    padding-top: 8px;
+    width: 65px;
+    text-transform: uppercase;
+}
+
+#dettagliViaggio .divServiceMiddle .imgRaiService {border-radius:0; width:auto;}
+
+#servizi .btn-danger, #dettagliVolo .btn-danger, #dettagliViaggio .btn-danger {
+    clear: both;
+    width: 60px;
+    height: 20px;
+    padding: 0;
+    font-size: small;
+}
+
+#servizi .divDashed, #dettagliVolo .divDashed, #dettagliViaggio .divDashed  {
+    border-left: 1px dashed #ddd;
+    height: 80%;
+    margin-left: 40px;
+}
+
+#servizi .tipoCamera, #dettagliVolo .tipoCamera, #dettagliViaggio .tipoCamera {
+    color: #666;
+    padding: 0;
+}
+
+    #servizi .tipoCamera small, #dettagliVolo .tipoCamera small, #dettagliViaggio .tipoCamera small {
+        font-size: 0.8rem;
+    }
+
+#servizi .statoServizio, #dettagliVolo .statoServizio,  #dettagliViaggio .statoServizio {
+    border: 2px solid;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    padding: 2px;
+    width: 90px;
+    text-align: center;
+    display: block;
+    margin-bottom: 0;
+}
+
+#divLoading {
+    display: none;
+    text-align: center;
+    padding-top: 150px;
+}
+
+#sortedResult {
+    font-size: 0.9rem;
+    margin: 13px 0 10px;
+}
+
+/* --- */
+
+#divSearchAPI, #confirmSelection {
+    display: none;
+}
+
+#searchFilters {
+    margin-top: 28px;
+}
+    #searchFilters div {
+        padding: 0;
+    }
+    #searchFilters .switchTxt {
+        padding-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    #searchFilters dt {
+        color: #3c4043;
+        font-weight: 400;
+    }
+
+#searchCriteria {font-weight: 400;}
+    #searchCriteria small {
+        color: rgba(0,0,0,.56);
+    }
+
+.searchCriteriaHeader, .DetailVoloHeader {
+    border: 1px solid #dadce0;
+    /*background: #009efb;*/
+    color: #3c4043;
+    border-radius: 10px;
+    height: 50px;
+}
+
+#searchCriteria div, #detailVolo div {
+    text-align: center;
+    padding: 7px;
+}
+
+#searchCriteria i, #detailVolo i {
+    margin: 10px 0;
+    width: 40px;
+}
+
+.svuotaFiltri {
+    border: 0;
+}
+
+.svuotaFiltroBtn {    
+    font-size:0.8rem;
+    margin: 0 0 10px;
+    padding: 3px !important;
+}
+
+.divSort {
+    margin: 10px 0 10px;
+}
+/* --- */
+
+#divRiepilogoFuoriPolicy {
+    display: none;
+}
+
+.searchIcon {
+    padding: 5px;
+}
+
+.searchIcon i {
+    padding: 5px;
+    margin: 10px 0 0 10px;
+}
+
+.filterLbl {
+    border: 1px solid #54667a;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+#filterStops li, #filterVettori li, .terms li, .baggage li, filterFornitore li {
+    list-style-type: none;
+}
+
+#searchFilters .filterLbl .fa-caret-down, #filterMobile, #mobileDropdownMenuLink, #confermFilterMobile {
+    display: none;
+}
+
+.divSlider {margin-top: 15px;}
+
+/*FILTERS SIDE NAV FOR TABLETS AND MOBILE*/
+
+.mobileFilterButtons{
+    width:100%;
+    border-radius: 20px;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+
+    /* The side navigation menu */
+    .searchFilters, #dropdownMenuLink {
+        display:none;
+    }
+
+    #filterMobile, #mobileDropdownMenuLink, #confermFilterMobile{
+        display: inline;
+    }
+
+    .searchCriteriaHeader{ height:auto;}
+
+}
+}
+
+#servizi .nocursor  {cursor:default;}
+
+.service-out-policy-message{
+    display:block;
+    width:95%;
+}
+
+.numPrenotazione {
+    text-align: center;
+    border-radius: 5px;
+    background: rgb(0, 158, 251);
+    padding: 5px;
+    width: 90%;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.numPrenotazione small {
+    display: block;
+    text-transform: uppercase;
+}
+
+#servizi{
+    list-style:none;
+}
+
+.yellow{
+    color:yellow;
+}

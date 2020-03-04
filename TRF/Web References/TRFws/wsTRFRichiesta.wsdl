@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.sdgitaly.net/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://www.sdgitaly.net/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.sdgitaly.net/">
+      <s:element name="WsNuovaRichiesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsRichiesta">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsNuovaRichiestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsNuovaRichiestaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsModificaRichiesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="dsRichiesta">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsModificaRichiestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsModificaRichiestaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsAnnullaRichiesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdMissione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsAnnullaRichiestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsAnnullaRichiestaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsSbloccaRichiesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdMissione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsSbloccaRichiestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsSbloccaRichiestaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsVisualizzaRichiesta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdMissione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsVisualizzaRichiestaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsVisualizzaRichiestaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsRichiestaFruita">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdMissione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsRichiestaFruitaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsRichiestaFruitaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsRichiestaNonFruita">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IdMissione" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsRichiestaNonFruitaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsRichiestaNonFruitaResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsNotificaRichieste">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="domainName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WsNotificaRichiesteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WsNotificaRichiesteResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="WsNuovaRichiestaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsNuovaRichiesta" />
+  </wsdl:message>
+  <wsdl:message name="WsNuovaRichiestaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsNuovaRichiestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsModificaRichiestaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsModificaRichiesta" />
+  </wsdl:message>
+  <wsdl:message name="WsModificaRichiestaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsModificaRichiestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsAnnullaRichiestaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsAnnullaRichiesta" />
+  </wsdl:message>
+  <wsdl:message name="WsAnnullaRichiestaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsAnnullaRichiestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsSbloccaRichiestaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsSbloccaRichiesta" />
+  </wsdl:message>
+  <wsdl:message name="WsSbloccaRichiestaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsSbloccaRichiestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsVisualizzaRichiestaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsVisualizzaRichiesta" />
+  </wsdl:message>
+  <wsdl:message name="WsVisualizzaRichiestaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsVisualizzaRichiestaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsRichiestaFruitaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsRichiestaFruita" />
+  </wsdl:message>
+  <wsdl:message name="WsRichiestaFruitaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsRichiestaFruitaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsRichiestaNonFruitaSoapIn">
+    <wsdl:part name="parameters" element="tns:WsRichiestaNonFruita" />
+  </wsdl:message>
+  <wsdl:message name="WsRichiestaNonFruitaSoapOut">
+    <wsdl:part name="parameters" element="tns:WsRichiestaNonFruitaResponse" />
+  </wsdl:message>
+  <wsdl:message name="WsNotificaRichiesteSoapIn">
+    <wsdl:part name="parameters" element="tns:WsNotificaRichieste" />
+  </wsdl:message>
+  <wsdl:message name="WsNotificaRichiesteSoapOut">
+    <wsdl:part name="parameters" element="tns:WsNotificaRichiesteResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wsTRFRichiestaSoap">
+    <wsdl:operation name="WsNuovaRichiesta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di inserire nel database del TRF una nuova richiesta di trasferta. Lo stato assunto dalla richiesta è nuova.</wsdl:documentation>
+      <wsdl:input message="tns:WsNuovaRichiestaSoapIn" />
+      <wsdl:output message="tns:WsNuovaRichiestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsModificaRichiesta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di modificare una richiesta di trasferta precedentemente inserita nel sistema TRF. La modifca sarà possibile solo se lo stato della richiesta è ‘Attesa Azione Cliente’.</wsdl:documentation>
+      <wsdl:input message="tns:WsModificaRichiestaSoapIn" />
+      <wsdl:output message="tns:WsModificaRichiestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsAnnullaRichiesta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di settare lo stato di una richiesta di trasferta su 'Annullata'.</wsdl:documentation>
+      <wsdl:input message="tns:WsAnnullaRichiestaSoapIn" />
+      <wsdl:output message="tns:WsAnnullaRichiestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsSbloccaRichiesta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di sbloccare una richiesta di trasferta che è in uno stato che impedisce al viaggiatore di effettuare modifiche sulla stessa in modo che il viaggiatore possa modificarla.</wsdl:documentation>
+      <wsdl:input message="tns:WsSbloccaRichiestaSoapIn" />
+      <wsdl:output message="tns:WsSbloccaRichiestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsVisualizzaRichiesta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo fornisce il set completo di informazioni relative all’id missione indicato.</wsdl:documentation>
+      <wsdl:input message="tns:WsVisualizzaRichiestaSoapIn" />
+      <wsdl:output message="tns:WsVisualizzaRichiestaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsRichiestaFruita">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di settare lo stato di una richiesta di trasferta su 'Fruita'.</wsdl:documentation>
+      <wsdl:input message="tns:WsRichiestaFruitaSoapIn" />
+      <wsdl:output message="tns:WsRichiestaFruitaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsRichiestaNonFruita">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di settare lo stato di una richiesta di trasferta su 'NonFruita'.</wsdl:documentation>
+      <wsdl:input message="tns:WsRichiestaNonFruitaSoapIn" />
+      <wsdl:output message="tns:WsRichiestaNonFruitaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WsNotificaRichieste">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Questo metodo ha lo scopo di restituire un dataset con le richieste da notificare.</wsdl:documentation>
+      <wsdl:input message="tns:WsNotificaRichiesteSoapIn" />
+      <wsdl:output message="tns:WsNotificaRichiesteSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="wsTRFRichiestaSoap" type="tns:wsTRFRichiestaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WsNuovaRichiesta">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsNuovaRichiesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsModificaRichiesta">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsModificaRichiesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsAnnullaRichiesta">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsAnnullaRichiesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsSbloccaRichiesta">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsSbloccaRichiesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsVisualizzaRichiesta">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsVisualizzaRichiesta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsRichiestaFruita">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsRichiestaFruita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsRichiestaNonFruita">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsRichiestaNonFruita" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsNotificaRichieste">
+      <soap:operation soapAction="http://www.sdgitaly.net/WsNotificaRichieste" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="wsTRFRichiestaSoap12" type="tns:wsTRFRichiestaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="WsNuovaRichiesta">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsNuovaRichiesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsModificaRichiesta">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsModificaRichiesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsAnnullaRichiesta">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsAnnullaRichiesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsSbloccaRichiesta">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsSbloccaRichiesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsVisualizzaRichiesta">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsVisualizzaRichiesta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsRichiestaFruita">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsRichiestaFruita" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsRichiestaNonFruita">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsRichiestaNonFruita" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WsNotificaRichieste">
+      <soap12:operation soapAction="http://www.sdgitaly.net/WsNotificaRichieste" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="wsTRFRichiesta">
+    <wsdl:port name="wsTRFRichiestaSoap" binding="tns:wsTRFRichiestaSoap">
+      <soap:address location="http://localhost/TRFWs/wsTRFRichiesta.asmx" />
+    </wsdl:port>
+    <wsdl:port name="wsTRFRichiestaSoap12" binding="tns:wsTRFRichiestaSoap12">
+      <soap12:address location="http://localhost/TRFWs/wsTRFRichiesta.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

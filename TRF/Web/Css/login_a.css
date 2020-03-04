@@ -1,0 +1,84 @@
+/*
+#############
+
+Color Glossary: elencare la descrizione e il codice esadecimale dei colori utilizzati nel progetto
+
+rosso: be0000
+
+#############
+*/
+
+body {color:#666; height:auto}
+
+#wrap {width:868px; margin:50px auto 0}
+
+#logo {margin:0 0 0 467px; float:left}
+
+#content {clear:both; background:url(/Web/Images/bkg_login.png) no-repeat top left; width:643px /*; height:413px*/}
+
+/*-----------------------------------------------------------------------------*/
+/* questi stili possono essere cancellati per il login del TAF */
+/*-----------------------------------------------------------------------------*/
+
+#pageLoginTro #content {background-image:url(/Web/Images/bkg_login_tro.png); width:660px}
+#pageLoginTro #lb_lingua, #pageLoginTro #boxLingua {display:none}
+#pageLoginTro fieldset {margin-top:92px}
+#pageLoginTro #butLogin {clear:both; margin-top:50px} 
+#pageLoginTro #footer {margin-top:160px} 
+
+/*-----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------*/
+/* questi stili possono essere cancellati per il login del TRO */
+/*-----------------------------------------------------------------------------*/
+
+#boxLingua #boxLinkCambiaLingua {float:right; margin-top:6px; margin-right:3px; cursor:pointer; width:100px; height:20px}
+
+#boxLingua #boxLinkCambiaLingua span {float:left}
+#boxLingua #boxLinkCambiaLingua img {float:left}
+
+#boxLingua #linguaAttiva span {float:left; font-size:1.1em; margin-top:5px}
+#boxLingua #linguaAttiva img {float:left}
+
+#flag_img {margin:2px 5px 0 5px}
+
+#divLang {display:none; background:#fff; position:absolute; width:340px}
+#divLang ul {list-style-type:none;padding:0; margin:0; border:1px solid #666}
+#divLang li {border-top:1px solid #ccc; height:25px; padding:0 0 0 5px; margin:0}
+#divLang li img{float:left;margin:2px 5px 0 5px}
+#divLang li span{float:left; margin-top:7px}
+#divLang li:hover {background:#e1e1e1; cursor:pointer}
+
+/*-----------------------------------------------------------------------------*/
+
+.boxInput {background:#fff; height: 27px; margin-top:7px}
+
+#ButtonLogin {float:right; width:152px; height:38px;
+	cursor:pointer;margin-top:30px; background:url('/Web/Images/login.png') no-repeat 0 0; border:0;
+	/*proprietà CSS3 - supportato da FF,Chrome e Safari */
+	/*-moz-border-radius: 10px;-webkit-border-radius: 10px;*/
+    /*width:150px; height:36px; */
+    /*font-size:1.3em; font-weight:bold; color:#fff; border:0; background:#666; */
+}
+#ButtonLogin:hover {background:url('/Web/Images/login_hover.png') no-repeat 0 0;}
+
+#ButtonReset {clear:both; background:Transparent; border:0; color:#000; text-transform:lowercase; float:right; margin-top:10px; padding:0; text-align:right; cursor:pointer; text-decoration:underline;}
+
+fieldset {padding:0; border:0; width:340px; float:right; margin-top:52px; margin-right:40px}
+fieldset .text {border:0; font-size:1.1em; margin:5px 0 0 5px; width:95%}
+
+label {font-size:1.4em; font-weight:bold; display:block; margin-top:30px}
+
+.linkCambiaPassword {text-decoration:underline; float:right; color:#be0000; margin-top:3px; background-color:Transparent}
+
+#footer {text-align:right; margin-top:120px; color:#c5c4c4}
+#footer a{color:#c5c4c4}
+
+#boxLeft {float:left; width:150px; margin-top:250px; margin-left:15px; font-size:0.9em}
+#boxLeft span {color:#fff; font-size:1em; font-weight:bold; padding:0 5px;} /*border-bottom:2px solid #A21212; */
+#boxLeft p {margin: 10px 0 0}
+#divLoginMessage {display:block; margin-top:30px; background:url('/Web/Images/bkg_error_login.png') no-repeat;}
+#divLoginMessage div {color:#666; margin-top:1px; padding-bottom:5px;}
+/*border-bottom:1px dotted #A21212; border-top:1px dotted #A21212;*/
+#version {display:none}
+#MessageAccess{font-size:1.2em; font-weight:bold;margin-left:65px}

@@ -1,0 +1,76 @@
+﻿/* --- Stili specifici per maschera Login ---*/
+h1 {font-size:2.0em; margin-left:100px; font-weight:bold;margin-right:100px}
+h2, #LabelTitolo {font-size:1.6em; margin:0 0 14px 0; color:#666; font-weight:bold;}
+
+body {background:#fff;}
+
+/*
+#wrap {	
+	background: #fff url(/Web/Images/hrgTop.jpg) top no-repeat ;
+	color:#666;
+	width:650px;
+	margin:50px auto;
+	padding-top:90px;
+	min-height:400px; /* valido per IE7+ */
+/*}*/
+
+#login {margin:60px auto 0; width:210px; padding:0;display:none}
+#loginmessage {padding:0; width:210px;}
+#loginmessage label {width:100%; color:#666;}
+
+input[type=radio],input[type=checkbox]{float:left; margin:14px 0 0 0; width:20px;}
+
+.text {border:1px solid #666; height:20px; width:200px; font-size:1.2em;}
+
+.buttonSubmit
+{
+	
+	cursor:pointer;
+	margin:5px 0 0 10px;
+	background:transparent;
+	text-align: right;
+	border: 0px solid #666;
+	font-size: 1.0em;
+	color:#666;
+	float:right;
+	font-weight:bold;
+	height:20px;	
+}
+
+.buttonReset
+{
+	
+	cursor:pointer;
+	margin:5px 0 0 10px;
+	background:transparent;
+	text-align: right;
+	border: 0px solid #666;
+	font-size: 1.0em;
+	color:#CC0000;
+	float:right;
+	font-weight:bold;	
+	height:20px;
+}
+
+#ButtonLogin{margin-bottom:20px;}
+
+#loginInfoPage {margin:60px auto 0; width:400px; padding-left:180px; color:#666;}
+#loginInfoPage label {float:none; margin-top:40px;}
+
+label {width:auto; margin:13px 0 0 0; float:left;}
+.labelForm {width:70px; margin:0 0 4px; color:#666; font-size:1.2em;}
+
+#loginCambioPassword {margin:60px auto 0; width:400px; padding-left:180px; color:#666;}
+#loginCambioPassword p {margin-left:0}
+#loginCambioPassword label {width:180px; margin-right:5px; margin-top:10px;}
+#loginCambioPassword input, #loginInfoPage input {float:left;}
+#loginCambioPassword input,#loginCambioPassword input {width: auto;	float:left;	margin-top: 10px;}
+
+/* box info a fondo pagina */
+#loginInfo{margin:0 auto; width:600px; text-align:center;}
+.BrowserNonCompatibile{font-size:1.2em;background:#FFDFEC;width:100%;border:2px solid #E00059;color:#8C0038;font-weight:bold;display:none;margin-top:20px;padding-bottom:10px}
+.BrowserNonCompatibile label {margin-left:5px}
+
+#divLoginMessage{width:100%;height:10px;font-size:0.9em;font-weight:bold;padding:10px; text-align:center; margin-top:20px; border-width:1px; border-style:solid}
+.divLoginError{background:#FFDFEC;border-color:#E00059;color:#8C0038;}
+.divLoginOk{background:#CDE0FD;border-color:#758FBE;color:#44608C;}

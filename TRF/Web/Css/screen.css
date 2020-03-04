@@ -1,0 +1,467 @@
+/*	#############
+	GestioneUtenti
+	#############
+ 
+Color Glossary
+BlueScuro - #013874
+Blue - #7A8CA2
+Rosso - #9c9c9c
+*/
+
+
+
+#DivPanelScioperi {clear:both;}
+
+/* --- Stili specifici per maschera Content ---*/
+#content {padding:0 10px 10px;}
+#content h1{color:#CC0000;margin-bottom:15px; margin-top:10px;}
+
+/* --- Stili specifici per maschera Funzionalita ---*/
+#T_UltraWebTree1 {float:left;padding:0;width:39%;}
+#funcFieldsContent {float:right;padding:0;width:50%;}
+
+/* --- Stili specifici per Browser ---*/
+.buttonBrowser {height:20px;margin-bottom:0;}
+.buttonBrowser input {float:right;width:100px;}
+
+.recordPerPagina {font-size:0.9em;height:22px;padding-top:3px;}
+.recordPerPagina span {float:right}
+.recordPerPagina label {float:left}
+.recordPerPagina select {float:left;margin:-3px 0 0 3px;}
+
+.tableBrowser {border:1px solid silver;border-collapse: collapse;margin:12px 0 1.25em 0;padding:0;width:100%}
+.tableBrowser th {padding:2px;height:20px; border:0; border-left:1px solid #F1F1F1 ;text-align:left;font-size:10px;color:#CC0000;background:#f1f1f1} /* background:#f1f1f1; border-bottom:2px solid #F1F1F1;*/
+.tableBrowser th a{text-decoration:none;}
+.tableBrowser tr {padding:2px;border:0px solid #F1F1F1;height:18px;}
+.tableBrowser td {padding:2px;border:1px solid #F1F1F1;height:18px;font-size:10px;}
+.tableBrowser tbody tr:hover td {background-color: #e1e1e1;}
+.tableBrowser caption{color: #013874;font-weight:bold;height:25px;text-align:left;margin-top:15px;}
+
+.tdheader{padding:2px;height:20px; border:0; border-right:1px solid silver ;text-align:left;font-size:12px;color:#CC0000;background:#f1f1f1;width:15%;font-weight:bold}
+#tblRiepilogoCosti{border-bottom:1px solid silver}
+#tblRiepilogoCosti td{border-right:1px solid silver;height:25px}
+/*.tblEditorRichiesta tr td {text-align:left;border:0; border-right:1px solid silver;height:25px}*/
+
+
+
+.noHand {cursor:default}
+.itemIconeBrowser {width:15px;}
+.selectedRowGridView {background:#ccc;}
+#trTipoAereo {padding:2px; height:20px; border:0; border-bottom:2px solid #f1f1f1; border-left:1px solid #f1f1f1 ;text-align:left;}
+
+input.buttonRowBrowser,a.buttonRowBrowser,a.buttonRowBrowser:visited{color:#666;border:0;background-color:transparent; background-repeat: no-repeat;text-decoration:none;cursor:pointer; width:16px; height:16px; margin:0 0 0 8px;}
+a.buttonRowBrowser:hover{text-decoration:underline;color:#666;}
+.buttonDimension{float:left;display:block;cursor:pointer;margin-right:5px}
+
+#SearchButton,
+	#PrintButton,
+	#HelpButton,
+	#ExportButton,
+	#NewButton,
+	#CloseButton,
+	#SaveButton,
+	#floatButton,
+	#btnRefresh {background-image:url('/Web/Images/sprites_gray.png'); width:45px; height:29px; border:0; border-left:1px solid #D9D9D9; cursor:pointer;
+	            background-color:Transparent; background-repeat:no-repeat; }
+
+/*settaggio posizione background per immagine sprites_gray.png*/
+#SearchButton {background-position:-47px -5px;}
+#PrintButton {background-position:3px -5px;}
+#HelpButton {background-position:-47px -45px;}
+#ExportButton {background-position:3px -45px;}
+#NewButton {background-position:3px -85px;}
+#CloseButton {background-position:-47px -85px;}
+#SaveButton {background-position:-97px -5px;}
+#floatButton {background-position:3px -125px;}
+#btnRefresh {background-position:-47px -125px;}
+
+#SearchButton:hover, 
+	#PrintButton:hover, 
+	#HelpButton:hover, 
+	#ExportButton:hover, 
+	#NewButton:hover,
+	#CloseButton:hover, 
+	#SaveButton:hover,
+	#floatButton:hover {background-color:#ddd;}
+
+input.btnDel {background-image:url('../../Images/cestino.gif');}
+input.btnCan {background-image:url('../../Images/undo.gif');}
+input.btnUpd {background-image:url('../../Images/accept.gif');}
+input.btnEdit {background-image:url('../../Images/edit.gif');}
+input.btnSel {background-image:url('../../Images/accept.gif');}
+input.btnAdd {background-image:url('../../Images/add.gif');}
+input.btnDetail {background-image:url('../../Images/add.gif');}
+
+/*#LabelRecPagina {float:left;font-size:0.9em; margin:2px 3px 0 1px}*/
+#LabelRecPagina {float:right;font-size:0.9em; margin:15px 3px 0 1px; padding-left:5px; border-left:1px solid #ccc;}
+
+#DropDownListRecPagina {float:left;font-size:0.9em;margin-left:8px;margin-top:-1px}
+
+#LabelNroRichieste,#LabelNroClaim,#LabelNroChiamate {float:right; margin-top:10px}
+
+#LabelNroRecord {float:right; margin-top:15px; padding-right:5px; font-size:0.9em;}
+
+/* --- RICERCA --- */
+/*height:123px; */
+#boxRicercaAvanzata {display:none; margin:0 auto 10px; width:726px; padding:5px 5px 5px 10px; background:#f1f1f1; border:0} /*url(/Web/Images/bkg_search.jpg) no-repeat top left*/
+#boxRicercaAvanzata.RicercaSmall {background:url(/Web/Images/bkg_search_500.jpg) no-repeat top left; width:520px;margin:0 auto;}
+#boxRicercaAvanzata.RicercaSmall284 {background:url(/Web/Images/bkg_search_284.jpg) no-repeat top left; width:284px;margin:0 auto;}
+#boxRicercaAvanzata.RicercaSmall284 #btnCerca {float:right}
+
+#boxRicercaAvanzata label {display:block;float:left;height:14px;}/*width:90px;clear:both; width:90px;margin-top:5px; */
+/*#boxRicercaAvanzata input, #boxRicercaAvanzata select {margin-top:3px;}*/
+
+/* stili utilizzati dal TAF */
+#boxField, #boxField2, #boxField3 {margin-left:15px;float:left; margin-top:12px;}
+#boxField label, #boxField2 label {clear:both; margin-top:5px; width:90px; display:block;float:left;height:14px;}
+#boxField input, #boxField2 input, #boxField3 input, #boxField select, #boxField2 select, #boxField3 select {margin-top:3px;}
+#boxField select, #boxField2 select, #boxField3 select {float:left}
+#boxField2, #boxField3 {padding-left:15px;border-left:1px dashed #ccc}
+/* fine */
+
+#boxRicercaAvanzata .boxField {margin-left:15px;float:left; margin-top:12px; padding-left:15px;border-left:1px dashed #ccc;}
+
+/*modifica per AON*/
+#boxRicercaAvanzata {margin:0 auto 10px; width:100%; padding:5px 0 10px; background:#f1f1f1; border:0} /*url(/Web/Images/background_ricerca.jpg) repeat-x*/
+#btnCerca {background:#ddd; min-width:50px; padding:4px; border:1px solid #fff; height:auto;
+           clear:both;float:right; margin-right:20px; cursor:pointer; margin-bottom:10px;
+           }
+.tableBrowser tbody .GridViewPaginationLink:hover td {background-color: #fff; cursor:default; border:0;}
+.tableBrowser tbody .GridViewPaginationLink td {border:0;}
+.tableBrowser {border:0;}
+.tableBrowser th {border-top:1px solid #f1f1f1;border-right:1px solid #f1f1f1;}
+
+/* --- FINE RICERCA --- */
+
+#spanButton {float:right}
+#spanButton img, #spanButton input {float:right; cursor:pointer; margin:0 3px}
+#toolbar .btnBrowser, #spanButton .btnBrowser {background:url(/Web/Images/bkg_button.gif) repeat-x; border:0; height:20px;}
+#spanButton .imgHideView {margin:0}
+
+#toolbar, #LabelNroRichieste {float:right;}
+
+
+#iframeBrowserDetail {width:100%; height:400px;}
+
+
+/* --- Stili specifici per le MyGridView --- */
+#GridView {cursor:default;}
+/*table tr td{cursor:default;}*/
+#GridView a {text-decoration:none;}
+
+ /*AlternatingRowStyle*/
+.ars {background:#f1f1f1;}
+
+/* Link della paginazione griglie */
+.GridViewPaginationLink { text-decoration: none; font-weight: bold; cursor:pointer; text-align:right;}
+.GridViewPaginationLink table{width:auto; margin-top:10px;}
+.GridViewPaginationLink td{width:auto;}
+.GridViewPaginationLink span {padding:3px; margin:0; color: #f1f1f1;  background: #c00; font-weight: bold; display:block; text-align:center; border:1px solid #c00; margin-right:2px; width:20px;}
+.GridViewPaginationLink a{padding:3px; margin:0; text-decoration:none; color: #666; font-weight: normal;cursor:pointer; display:block; text-align:center; border:1px solid #666; margin-right:2px; width:20px;}
+.GridViewPaginationLink a:hover {color: #c00; cursor:pointer; background:#f1f1f1;}
+.GridViewPaginationLink:hover {background:#fff;}
+
+/* Footer GridView (per ora non utilizzato ma predisposto) */
+.GridViewFooter {}
+
+#DropDownListRecordPagina {float:right; margin-top:13px;}
+
+/* --- Pannelli --- */
+#tabPanel {border-bottom:1px solid #666;height:23px;text-align:center;background:transparent;margin:20px 0;}
+#tabPanel input{float:left;border-top:1px solid #666;border-left:1px solid #666;border-right:1px solid #666;margin:0 0 0 5px;padding:3px;width:100px;height:24px;}                
+.tabDisabled{background:#ccc;}
+.tabNoSelected{background:#ccc;border-bottom:0;border-bottom:1px solid #666;cursor:pointer;}
+.tabSelected{border-bottom:1px solid #fff;background:#fff;}
+
+/* --- Stili specifici per Editor ---*/
+
+.editorSubstituteBrowser {width:98%;}
+.editorPopUp {width:100%;}
+.editorPopUp #content {padding:0;}
+
+#wrapEditor {}
+
+#wrapEditor label {height:16px; float:left; width:150px; border-bottom:1px dotted #e1e1e1; color:#666; padding:3px 0 0 3px;}
+#wrapEditor input {float:left;margin-bottom:2px;}
+#wrapEditor select {float:left;margin-bottom:2px;}
+#wrapEditor label.error {text-align:left;color:#CC0000;width:97%;border:1px solid red;font-size:10px;font-weight:bold;background-color:#F9A7A7}
+#wrapEditor label.required {color:red;}
+#wrap label.required {color:#c00;}
+#wrapEditor .text {width:200px;}
+#wrapEditor textarea {width:200px;}
+#wrapEditor #PanelSistema label {width:400px;}
+#wrapEditor #PanelSistema .indent {width:380px;margin-left:20px;}
+
+.tblEditorRichiesta span.error {border:1px solid red;padding:2px;}
+.tblEditorRichiesta input.error {border:1px solid red;}
+.tblEditorRichiesta textarea.error {border:1px solid red;}
+
+fieldset {width:98%; margin:10px auto 0; padding:0; border:0;}
+#wrapEditor fieldset label {width:28%;}
+#wrapEditor fieldset input, #wrapEditor fieldset textarea {width:70%;}
+fieldset textarea {height:100px; margin-bottom:2px;}
+#wrapEditor fieldset .checbox, #wrapEditor fieldset .radio {width:auto;}
+#wrapEditor .datepicker {width:100px;}
+.ui-datepicker-trigger {cursor:pointer;}
+
+#buttonEditor {height:35px;padding:5px;margin-bottom:0px;}
+#buttonEditor input {float:right;width:100px;}
+
+/* --- stili per le liste --- */
+/* ul {list-style-type:none;padding:0;margin:0;font-weight:bold;} */
+/* ul li {line-height:20px;margin-left:0px;width:181px;font-weight:normal;} */
+
+/* --- stili per le liste --- */
+#listaImage {list-style:square inside url(../Codice_esempio/arrow.jpg);}
+
+/* --- stili per le liste a 2 colonne --- */
+#lista2colonne {width:200px;}
+#lista2colonne dt{float:left;width:50%;background:#e1e1e1;border-right:1px solid #fff;border-bottom:1px solid #fff;}
+#lista2colonne dd{float:left;width:49%;background:#ccc;margin:0;border-right:1px solid #fff;border-bottom:1px solid #fff;}
+
+/* -- stili per la maschera di ERRORE -- */
+#wrapError {margin:10px;border:1px solid #ccc;}
+#wrapError h1 {padding-left:10px;background:#ccc;font-weight:bold;margin-bottom:10px;}
+#wrapError label {margin-left:25px;width:272px;color:#f00;font-weight:bold;}
+#wrapError p {margin:5px 25px;color:#000;}
+#wrapError input {margin:10px 20px;}
+
+/* -- stili per Browser Richiesta Viaggio -- */
+.chkBrowser {margin-left:5px;}
+.labelBrowser {margin-left:3px}
+.imgBrowser {margin-left:3px}
+.btnBrowser {margin-left:3px}
+#LabelRicercaAvanzata{color:#666;font-size:10px;float:left;cursor:pointer}
+#LabelRicercaAvanzataOpen{color:#666;font-size:10px;float:left;cursor:pointer}
+#LabelRicercaAvanzataClose{color:#666;font-size:10px;float:left;cursor:pointer}
+#LabelRicerca {margin-left:5px;}
+#txtRicViaggiatore{width:300px;}
+#txtRichiedente{width:300px;}
+#txtReclamante{width:150px;}
+/* questa classe dovrà sparire ed essere sostituita da #intestazioneBrowser */
+#divNroRichieste{background:#f0f0f0; padding:5px 0; border:1px solid #e1e1e1;border-top:0;
+                text-align:center; color:#666;font-weight:bold; height:18px; clear:both}
+/*--*/
+#intestazioneBrowser{background:#f0f0f0; padding:5px 0; border:1px solid #e1e1e1;/*border-top:0;*/
+                text-align:center; color:#666;font-weight:bold; height:18px; clear:both}
+
+#intestazioneBrowser{padding:0; height:28px;}
+
+/*usato negli editor*/
+.editorSubstituteBrowser #content h1 {margin-top:10px; margin-bottom:15px;}
+.editorPopUp #content h1 {margin-top:0; position:absolute; left:20px; top:6px; color:#9c9c9c;}
+/*--*/
+
+#divNroRecord{background:#f0f0f0; padding:5px 0;
+                 border-bottom:1px solid #e1e1e1;border-left:1px solid #e1e1e1;
+                 border-right:1px solid #e1e1e1;margin-bottom:5px;text-align:center;}
+#divNroRecord label{color:#666;font-weight:bold;font-size:12px;}
+
+.linkRichiesta{color:gray;font-weight:bold}
+.linkRichiesta:hover{cursor:pointer;text-decoration:underline;color:gray}
+/* ----------------------------------------- */
+
+/* -- stili che diventeranno Generali se approvati -- */
+.labelDelete{font-weight:bold;background:#e1e1e1}
+.labelEdit{font-weight:bold;background:#e1e1e1}
+.recordTotali {font-size:0.9em;height:20px;width:50%;float:left}
+/* -------------------------------------------------- */
+
+/* -- stili per Editor Richiesta Viaggio -- */
+.tblEditorRichiesta{border-right:1px solid silver;width:100%;border-left:1px solid silver;clear:both}
+.tblEditorRichiesta th {font-size:1.2em;width:100%;background:#e1e1e1;text-align:left;color:gray;border-top:1px solid silver;height:25px}
+.tblEditorRichiesta td {border-top:1px solid silver;height:21px}
+
+.tblEditorImport{width:100%;}
+.tblEditorImport th {font-size:1.2em;width:100%;background:#e1e1e1;text-align:left;color:gray;height:25px}
+.tblEditorImport td {height:21px}
+
+.tblEditorRiepilogo{width:100%;border:1px solid #666}
+.tblEditorRiepilogo th {font-size:1.2em;background:#e1e1e1;text-align:left;color:gray;height:25px}
+.tblEditorRiepilogo td {height:21px}
+
+.tdLabelImport{width:20%;text-align:right;font-size:0.8em;font-weight:bold}
+.tdInputImport{width:80%;text-align:left;}
+
+
+.lblEditor{color:#000;display:block;margin-right:5px} /*font-size:1.2em;*/
+.lblEditorRed{font-size:0.8em;color:red;font-weight:bold;margin-left:5px}
+.inputEditorShort{margin-left:2px;width:100px}
+.inputEditor{margin-left:2px}
+.inputEditorLong{margin-left:2px;width:300px}
+.inputEditorNota{margin-left:2px;width:400px;height:50px}
+.inputEditorReadonly{margin-left:2px;background-color:#e1e1e1;border:1px solid #a5acb2;float:left;margin-top:2px;margin-bottom:2px}
+.inputEditorReadonlyGray{margin-left:2px;margin-top:2px;margin-bottom:2px;background-color:#e1e1e1;border:1px solid #a5acb2;float:left;color:#333333;font-weight:bold}
+.inputEditorReadonlyGrayLong{width:275px;margin-left:2px;margin-top:2px;margin-bottom:2px;background-color:#e1e1e1;border:1px solid #a5acb2;float:left;color:#333333;font-weight:bold}
+.tdLabel{width:20%;border-right:1px solid silver;text-align:right;}
+.tdInput{width:80%;text-align:left;}
+.tdInput{width:80%;text-align:left;}
+.tdMessageText{font-size:1.2em;background:#CDE0FD;width:80%;height:100%;border-bottom:2px solid #758FBE;color:#44608C;font-weight:bold;border-right:2px solid #758FBE;border-top:2px solid #758FBE;}
+
+/*--SE: da eliminare */
+.tdMessageImage{width:20%;border-right:0px;text-align:right;background:#CDE0FD;border-bottom:2px solid #758FBE;border-left:2px solid #758FBE;border-top:2px solid #758FBE;}
+.tdAltroOperatoreImage{width:20%;border-right:0px;text-align:right;background:#FFDFEC;border-bottom:2px solid #E00059;border-left:2px solid #E00059;}
+.tdAltroOperatoreText{font-size:1.2em;background:#FFDFEC;width:80%;height:100%;border-bottom:2px solid #E00059;color:#8C0038;font-weight:bold;border-right:2px solid #E00059;}
+/*--*/
+#trErroriCampiObbligatori,#trMessage, #trAltroOperatore {padding: 5px 5px 5px 30px; margin:5px 0 10px;}
+#trErroriCampiObbligatori, #trAltroOperatore {background: #fff1f0 url(/Web/Images/alert.jpg) no-repeat 4px 4px; border:1px solid #E00059;clear:both}
+#trMessage {background:#CDE0FD url(/Web/Images/Info.jpg) no-repeat 4px 4px; border:1px solid #758FBE;clear:both}
+#trErroriCampiObbligatori p, #trMessage p, #trAltroOperatore p{margin:0}
+
+.WDC{margin-left:2px}
+.lockRecordFalse{display:none;border:1px solid red;height:100px;}
+#divWsError{display:none;border:1px solid red;height:100px;}
+.lblMessaggiBig{margin-top:120px;font-size:1.5em;color:#666;font-weight:bold;display:block}
+.lblMessaggiWsBig{margin-top:120px;font-size:1.5em;color:#fff;font-weight:bold;display:block}
+.imgLock{margin-top:120px;float:left;margin-left:50px}
+.testataServizio{padding-top:3px;border-top:1px solid silver;border-right:1px solid silver;border-left:1px solid silver;width:100%;height:20px;font-size:1.2em;background:#e1e1e1;text-align:left;color:gray;font-weight:bold;display:block}
+.imgNote{background-image:url(/Web/Images/new_note.gif);background-repeat: no-repeat;background-position: center;cursor:pointer}
+.imgPagamento{background-image:url(/Web/Images/Pagamento.png);background-repeat: no-repeat;background-position: center;cursor:pointer;text-decoration:none}
+.imgElimina{background-image:url(/Web/Images/Cestino2.gif);background-repeat: no-repeat;background-position: center;cursor:pointer;text-decoration:none}
+.imgDettaglioBeneficiario{background-image:url(/Web/Images/Beneficiario.png);background-repeat: no-repeat;background-position: center;cursor:pointer;text-decoration:none}
+.imgDettaglioRiepilogo{background-image:url(/Web/Images/ico_note.gif);background-repeat: no-repeat;background-position: center;cursor:pointer;text-decoration:none}
+.imgInviaMail{background-image:url(/Web/Images/Sendemail.gif);background-repeat: no-repeat;background-position: center;cursor:pointer;text-decoration:none}
+.imgHotel{background-image:url(/Web/Images/Check_Hotel.png);background-repeat: no-repeat;background-position: center;cursor:pointer;text-decoration:none}
+
+#LabelDescServizio{font-size:1.6em;color:#CC0000;display:block; font-family:Georgia; font-style:italic; font-weight:bold} /*width:100%;background:#e1e1e1;border-bottom:1px solid silver;*/
+.tblPulsantiera{border:1px solid silver;width:100%;}
+.tblPulsantiera th {font-size:1.0em;background:#e1e1e1;color:gray;text-align:left}
+.tblNoteRichiesta{margin-top:5px;border:1px solid silver;width:100%;font-size:1.2em}
+#thHeaderLog p{border-bottom:1px solid silver;padding:5px;margin:0}
+.alternate {background-color:#F1F1F1}
+.lblAggiungiRiga{margin-left:20px;font-size:0.8em;text-align:right;color:#CC0000;cursor:pointer}
+.lblTestataServizio{display:block;width:180px;float:left}
+.imgServizio{margin-left:2px;margin-top:2px;margin-right:2px;float:left}       
+.lblBlu{font-size:1.0em;border:0px;font-weight:bold;margin:0px}
+#buttonEditorMini {height:25px;padding:5px;margin-bottom:10px;}
+#buttonEditorMini input {float:right;width:100px;}
+#divTotale{border-right:1px solid gray;border-left:1px solid gray;border-bottom:1px solid gray;padding:5px;background:#ccc;text-align:right}
+#divTotale label{font-size:1.2em}
+
+.WebCombo
+{
+	margin-left:2px;
+	padding-top:0;
+	padding-left:0;	
+	padding-top:1px;
+}
+#WCAutorizzatore_img,
+	#WCAutorizzatore_Main,
+	#WCResponsabile_img,
+	#WCResponsabile_Main,
+	#WCAutorizzato_img,
+	#WCAutorizzato_Main,
+	#WCCDC_img,
+	#WCCDC_Main,
+	#WCAutorizzatore1_img,
+	#WCAutorizzatore1_Main,
+	#WCAutorizzatore2_img,
+	#WCAutorizzatore2_Main,
+	#WCAutorizzatore3_img,
+	#WCAutorizzatore3_Main{height:16px}
+
+#WDCDataInizio{margin-top:2px}
+#WDCDataFine{margin-top:2px}
+
+#boxRicercaUtenti {border:1px solid gray;background-color:#e1e1e1;margin-top:5px;padding:3px;margin-bottom:10px;height:135px}
+#boxRicercaUtenti label{width:100px;display:block;float:left}
+#boxRicercaUtenti input[type="text"]{width:160px}
+.relaunchWS{cursor:pointer}
+
+.testataRiepilogo{border:1px solid #c0c0c0;background-color:#e1e1e1;width:50%;}
+#tblRiepilogo #lblAddebito {text-align:center;display:block;width:100%;clear:both;color:#000}
+#tblRiepilogo #lblAccredito {text-align:center;display:block;width:100%;clear:both;color:#000}
+#tblRiepilogo{width:500px}
+.tdRiepilogo{width:100px;border:1px solid #c0c0c0;text-align:center;}
+
+#tblRiepilogoHotel{width:680px}
+.tdRiepilogoHotel{border:1px solid #c0c0c0;text-align:left;padding-left:2px;height:20px}
+.tdRiepilogoSeleziona{border:1px solid #c0c0c0;text-align:center;text-decoration:underline;color:green;font-weight:bold;cursor:pointer;display:block}
+
+.tdForzaRichiesta{text-decoration:underline;color:red;background-color:#e1e1e1;height:20px;font-weight:bold;cursor:pointer}
+#divRiepilogo #lblRichiestaForzata{text-decoration:underline;color:green;font-weight:bold;cursor:pointer;width:300px;display:block}
+#tblRegistroEventi #lblErroreWs{color:#8C0038;background-color:#FFDFEC;border-bottom:1px solid #E00059;border-right:1px solid #E00059;border-left:1px solid #E00059;border-top:1px solid #E00059;font-size:12px}
+#ButtonAvviaRiconciliazione{width:450px;height:100px;cursor:pointer;font-size:30px;font-weight:bold;background-color:#fff;border:0;color:#8C0038;text-decoration:underline}
+.imgHideView{margin-left:5px;margin-top:5px;cursor:pointer;float:left}
+.hrSeparazione{border:1px solid #c0c0c0}
+.ServiceDescription{float:left;font-size:10px}
+
+.testataTabelle{background-color:#f1f1f1;white-space:nowrap} /*background-color:#DCDCDC;*/
+.testataTabelle a {color:#CC0000}
+#txtViaggiatore{font-weight:bold;color:#666;float:left;margin-left:2px}
+
+#divScrollable {float:right;overflow:auto; width:100%;min-height:435px;}
+
+#footerTotalStatistics {width:750px;background-color:#e1e1e1;color:#CC0000;font-size:0.9em;height:20px;padding-top:7px;border:1px solid gray}
+.testataTabellaStatistiche{background-color:#e1e1e1;display:block;text-align:center;height:20px;padding-top:7px;color:#CC0000;font-weight:bold;font-size:0.9em}
+
+.icoLock {background: transparent url(/Web/Images/lock.gif) no-repeat;width:16px; height:16px; display:block;}
+.HeaderMail{background: transparent url(/Web/Images/Sendemail.gif) no-repeat;width:16px; height:16px; display:block;background-position:5px 5px}
+.errMessageCell{text-align:center;}
+.MaskedEditError{border:1px solid red}
+.tdMultiSelection{width:200px;font-size:10px;font-weight:bold}
+.spanUploadFile{color:#cc0000;font-weight:bold;font-size:9px;}
+#imgLogo{width:100px;}
+.tstMultiSelezione{width:200px;color:#cc0000;border-bottom:1px solid #e1e1e1}
+
+#ButtonCarica{background:url(/Web/Images/upload.jpg) no-repeat;border:0;height:24px;width:24px;cursor:pointer}
+.userEnabled{background:url(/Web/Images/userEnabled.gif) no-repeat}
+.HiddenColumn{display:none}
+#titleReport{font-size:12px;font-weight:bold;vertical-align:top;color:#186CAC}
+.tblRiepilogo td {font-size:9px;color:#666;border-bottom:1px solid #e1e1e1;padding-bottom:1px}
+.tblRiepilogo{width:600px}
+
+#tblRiepilogoAllegati{background-color:#fff;text-align:left;border:1px solid #e1e1e1;width:100%}
+#tblRiepilogoAllegati th{color:gray;text-align:left;font-size:1.2em;background-color:#e1e1e1;border-left:1px solid silver;height:25px;border-right:1px solid silver;border-bottom:1px solid silver}
+#ButtonExportExcel{font-size:0.8em;float:right}
+
+#divErrori {background: #fff1f0 url(/Web/Images/alert.jpg) no-repeat 4px 4px; border:1px solid #E00059;display:block; padding: 5px 5px 5px 30px; margin:5px 0 10px;}
+#divErrori p {margin:0}
+
+.erroriServizi {background: #fff1f0 url(/Web/Images/alert.jpg) no-repeat 4px 4px; border:1px solid #E00059;display:block; padding: 5px 5px 5px 30px; margin:5px 0 10px;}
+.erroriServizi p {margin:0}
+
+.icoDisc{font-size:1.4em}
+.validatorError{border:1px solid red;}
+
+.utenteInserimentoAggiornamento {font-size:0.8em;}
+
+
+/*Link nella pagina della richiesta viaggio*/
+#linkTSPM, #linkTSPM:hover, #linkTSPM:visited {color:#c00;font-size:14px;text-decoration:underline;margin-left:5px;}
+#pInfoNote{font-size:12px;font-style:italic}
+/* ----------------------------------------- */
+
+
+/*CLASSE PER NASCONDERE UN OGGETTO SOLO A LIVELLO DI POSIZIONE (utile per alcuni controlli che con il displayNone non vengono visti da alcune funzioni.)*/
+
+.hideObject
+{
+    position:absolute;
+    top:-9999px;
+}
+
+
+.labelTitoloRed
+{
+    font-family:Arial;
+    font-size:16px;
+    border:2px solid #CC0000;
+    width:400px;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+    color: #CC0000;  
+}
+
+.labelTitoloBlue
+{
+    font-family:Arial;
+    font-size:16px;
+    border:2px solid #013874;
+    width:400px;
+    margin:auto;
+    text-align:justify;
+    padding:10px;
+    color: #013874;  
+}

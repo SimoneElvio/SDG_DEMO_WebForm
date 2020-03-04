@@ -1,0 +1,804 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CCFB4B2B-8F90-40D0-B654-EFC3A00632EA}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDG_DEMO</RootNamespace>
+    <AssemblyName>SDG_DEMO</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>true</UseIISExpress>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=3.5.40412.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL" />
+    <Reference Include="AjaxMin, Version=4.0.202.1, Culture=neutral, PublicKeyToken=24297a69a7eae424, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Interception, Version=2.0.414.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Microsoft.Practices.Unity.Interception.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SDG, Version=3.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SDG.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.IO, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SDG.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="SDG.WorkFlow, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\SDG.WorkFlow.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Interactive.Async, Version=3.2.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Interactive.Async.3.2.0\lib\net45\System.Interactive.Async.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxMin.dll" />
+    <Content Include="bin\App_Licenses.dll" />
+    <Content Include="bin\AutoMapper.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Common.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.Data.dll" />
+    <Content Include="bin\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll" />
+    <Content Include="bin\Microsoft.Practices.ObjectBuilder2.dll" />
+    <Content Include="bin\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.dll" />
+    <Content Include="bin\Microsoft.Practices.Unity.Interception.dll" />
+    <Content Include="bin\SDG.dll" />
+    <Content Include="bin\SDG.IO.dll" />
+    <Content Include="bin\SDG.WorkFlow.dll" />
+    <Content Include="CustomErrorMessage.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultErrorMessage.htm" />
+    <Content Include="Global.asax" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
+    <None Include="Web References\TRFws\wsTRFRichiesta.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web\assets\images\custom-select.png" />
+    <Content Include="Web\assets\images\logo-text.png" />
+    <Content Include="Web\assets\images\logo.png" />
+    <Content Include="Web\assets\images\users\2.jpg" />
+    <Content Include="Web\assets\images\users\1.jpg" />
+    <Content Include="Web\assets\images\users\3.png" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-grid.css" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-grid.min.css" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-reboot.css" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-reboot.min.css" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap.css" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap.min.css" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.bundle.js" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.js" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.min.js" />
+    <Content Include="Web\assets\plugins\bootstrap\js\popper.min.js" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinHTML5.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinModern.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinNice.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinSimple.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\css\normalize.css" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-flat.png" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-modern.png" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-nice.png" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-simple.png" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider-init.js" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider.js" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider.min.js" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\js\vendor\jquery-1.12.3.min.js" />
+    <Content Include="Web\assets\plugins\jquery-mask\jquery.mask.js" />
+    <Content Include="Web\assets\plugins\jqueryui\datepicker-it.js" />
+    <Content Include="Web\assets\plugins\jquery\jquery191.min.js" />
+    <Content Include="Web\assets\plugins\styleswitcher\jQuery.style.switcher.js" />
+    <Content Include="Web\assets\plugins\sweetalert\jquery.sweet-alert.custom.js" />
+    <Content Include="Web\assets\plugins\sweetalert\sweetalert-dev.js" />
+    <Content Include="Web\assets\plugins\sweetalert\sweetalert.css" />
+    <Content Include="Web\assets\plugins\sweetalert\sweetalert.min.js" />
+    <Content Include="Web\blank.html" />
+    <Content Include="Web\Common\Script.ascx" />
+    <Content Include="Web\CrossGruppiClienteUtenti\frm_MSB_CGC.aspx" />
+    <Content Include="Web\CrossGruppiClienteUtenti\frm_MSE_CGC.aspx" />
+    <Content Include="Web\Css\colors\blue.css" />
+    <Content Include="Web\Css\style-custom.css" />
+    <Content Include="Web\Images\ascending.png" />
+    <Content Include="Web\assets\plugins\bootstrap-switch\bootstrap-switch.css" />
+    <Content Include="Web\assets\plugins\bootstrap-switch\bootstrap-switch.js" />
+    <Content Include="Web\assets\plugins\bootstrap-switch\bootstrap-switch.min.css" />
+    <Content Include="Web\assets\plugins\bootstrap-switch\bootstrap-switch.min.js" />
+    <Content Include="Web\assets\plugins\jqueryui\AUTHORS.txt" />
+    <Content Include="Web\assets\plugins\jqueryui\external\jquery\jquery.js" />
+    <Content Include="Web\assets\plugins\jqueryui\images\ui-icons_444444_256x240.png" />
+    <Content Include="Web\assets\plugins\jqueryui\images\ui-icons_555555_256x240.png" />
+    <Content Include="Web\assets\plugins\jqueryui\images\ui-icons_777620_256x240.png" />
+    <Content Include="Web\assets\plugins\jqueryui\images\ui-icons_777777_256x240.png" />
+    <Content Include="Web\assets\plugins\jqueryui\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="Web\assets\plugins\jqueryui\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Web\assets\plugins\jqueryui\index.html" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.css" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.js" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.min.css" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.min.js" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.structure.css" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.structure.min.css" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.theme.css" />
+    <Content Include="Web\assets\plugins\jqueryui\jquery-ui.theme.min.css" />
+    <Content Include="Web\assets\plugins\jqueryui\LICENSE.txt" />
+    <Content Include="Web\assets\plugins\jquery\jquery.js" />
+    <Content Include="Web\assets\plugins\sticky-kit-master\dist\sticky-kit.js" />
+    <Content Include="Web\assets\plugins\sticky-kit-master\dist\sticky-kit.min.js" />
+    <Content Include="Web\Css\animate.css" />
+    <Content Include="Web\Css\spinners.css" />
+    <Content Include="Web\assets\plugins\jquery\jquery.min.js" />
+    <Content Include="Web\Css\colors\green.css" />
+    <Content Include="Web\Css\style.css" />
+    <Content Include="Web\assets\images\pattern\1.png" />
+    <Content Include="Web\Images\calendar.gif" />
+    <Content Include="Web\Images\descending.png" />
+    <Content Include="Web\Images\blank.png" />
+    <Content Include="Web\Images\loading.gif" />
+    <Content Include="Web\Images\logoMailSdg.jpg" />
+    <Content Include="Web\Images\Loghi\sdg.png" />
+    <Content Include="Web\Images\logoMail.jpg" />
+    <Content Include="Web\Images\upload.png" />
+    <Content Include="Web\JScript\autoNumeric.js" />
+    <Content Include="Web\JScript\custom.min.js" />
+    <Content Include="Web\JScript\ics.deps.min.js" />
+    <Content Include="Web\JScript\jquery.slimscroll.js" />
+    <Content Include="Web\JScript\jquery.validate.js" />
+    <Content Include="Web\JScript\sidebarmenu.js" />
+    <Content Include="Web\JScript\waves.js" />
+    <Content Include="Web\LookupSocietaCliente\frm_MSB_LSL.aspx" />
+    <Content Include="Web\LookupSocietaCliente\frm_MSE_LSL.aspx" />
+    <Content Include="Web\ProcessoAutorizzativo\frm_MSE_PAU.aspx" />
+    <Content Include="Web\CampiNascostiCliente\frm_MSB_CNC.aspx" />
+    <Content Include="Web\CampiNascostiCliente\frm_MSE_CNC.aspx" />
+    <Content Include="Web\Common\CustomerPagerControl.ascx" />
+    <Content Include="Web\Common\Errors.aspx" />
+    <Content Include="Web\Common\Excel.aspx" />
+    <Content Include="Web\Common\Footer.ascx" />
+    <Content Include="Web\Common\Menu.ascx" />
+    <Content Include="Web\Common\Top.ascx" />
+    <Content Include="Web\Css\help.css" />
+    <Content Include="Web\Css\login_a.css" />
+    <Content Include="Web\Css\login_change_pwd.css" />
+    <Content Include="Web\Css\mainpage.css" />
+    <Content Include="Web\Css\master.css" />
+    <Content Include="Web\Css\print.css" />
+    <Content Include="Web\Css\screen.css" />
+    <Content Include="Web\Home\blank.aspx" />
+    <Content Include="Web\Home\CloseSession.aspx" />
+    <Content Include="Web\Home\frm_HOM.aspx" />
+    <Content Include="Web\Home\mainpage.aspx" />
+    <Content Include="Web\Home\XListener.html" />
+    <Content Include="Web\Impersonate\frm_MSE_IMP.aspx" />
+    <Content Include="Web\JScript\additional-methods.js" />
+    <Content Include="Web\JScript\costanti.js" />
+    <Content Include="Web\JScript\index_joust.js" />
+    <Content Include="Web\JScript\jquery-ui\jquery-ui-1.8.9.custom.min.js" />
+    <Content Include="Web\JScript\jquery-ui\jquery.ui.datepicker-it.js" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-icons_454545_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-icons_888888_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\smoothness\jquery-ui-1.8.9.custom.css" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="Web\JScript\jquery-ui\themes\ui-lightness\jquery-ui-1.8.9.custom.css" />
+    <Content Include="Web\JScript\jquery.maskedinput_new.js" />
+    <Content Include="Web\JScript\jquery.textarearesizer.compressed.js" />
+    <Content Include="Web\JScript\date.js" />
+    <Content Include="Web\JScript\DatePicker\datePicker.css" />
+    <Content Include="Web\JScript\DatePicker\jquery.bgiframe.min.js" />
+    <Content Include="Web\JScript\DatePicker\jquery.datePicker.js" />
+    <Content Include="Web\JScript\jquery.date.js" />
+    <Content Include="Web\JScript\jquery.formobserver.js" />
+    <Content Include="Web\JScript\jquery.maskedinput-1.2.2.js" />
+    <Content Include="Web\JScript\JScript.js" />
+    <Content Include="Web\JScript\loading.js" />
+    <Content Include="Web\JScript\session.js" />
+    <Content Include="Web\JScript\WindowUtilities.js" />
+    <Content Include="Web\Login\frm_BYP.aspx" />
+    <Content Include="Web\Login\frm_LGN.aspx" />
+    <Content Include="Web\Login\frm_LGN_2.aspx" />
+    <Content Include="Web\Login\frm_PWD.aspx" />
+    <Content Include="Web\FileSender\filesender.aspx" />
+    <Content Include="Web\Ruoli\frm_MSB_RUL.aspx" />
+    <Content Include="Web\Ruoli\frm_MSE_RUL.aspx" />
+    <Content Include="Web\Ruoli\frm_MSE_RUL_UTE.aspx" />
+    <Content Include="Web\Utenti\frm_MSB_RPG_UTE.aspx" />
+    <Content Include="Web\Utenti\frm_MSB_UTE_PWD.aspx" />
+    <Content Include="Web\Utenti\frm_MSE_UTE_CLI.aspx" />
+    <Content Include="Web\Utenti\frm_MSE_UTE_WRF.aspx" />
+    <Content Include="Web\Utenti\frm_MSB_UTE.aspx" />
+    <Content Include="Web\Utenti\frm_MSE_UTE.aspx" />
+    <Content Include="Web\Utenti\frm_MSU_UTE.aspx" />
+    <Content Include="Web\Utenti\frm_MSB_UTE.js" />
+    <Content Include="Web\WebFormTestWs.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Allegati.cs" />
+    <Compile Include="BusinessObjects\Clienti.cs" />
+    <Compile Include="BusinessObjects\CrossGruppiClienteUtenti.cs" />
+    <Compile Include="BusinessObjects\GruppiCliente.cs" />
+    <Compile Include="BusinessObjects\LookupStatoRichiesta.cs" />
+    <Compile Include="BusinessObjects\LookupStatoServizio.cs" />
+    <Compile Include="BusinessObjects\Lookup_societa_cliente.cs" />
+    <Compile Include="BusinessObjects\RichiestaViaggio.cs" />
+    <Compile Include="BusinessObjects\Utility\Encrypt.cs" />
+    <Compile Include="BusinessObjects\WorkflowAzioniCases.cs" />
+    <Compile Include="SDG\Basepage\BasePageBrowser.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDG\Basepage\BasePageEditor.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BusinessObjects\ConfigurationSetting.cs" />
+    <Compile Include="BusinessObjects\ProtectedContentHandler.cs" />
+    <Compile Include="BusinessObjects\CrossUtenteDelegati.cs" />
+    <Compile Include="BusinessObjects\LookupSoluzione.cs" />
+    <Compile Include="CustomErrorMessage.aspx.cs">
+      <DependentUpon>CustomErrorMessage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomErrorMessage.aspx.designer.cs">
+      <DependentUpon>CustomErrorMessage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\CampiNascostiCliente.cs" />
+    <Compile Include="BusinessObjects\SessioniUtenti.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="SDG\Basepage\BasePageRichiesta.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDG\GestioneUtenti\Audit.cs" />
+    <Compile Include="SDG\GestioneUtenti\Azioni.cs" />
+    <Compile Include="SDG\GestioneUtenti\Dizionario.cs" />
+    <Compile Include="SDG\GestioneUtenti\Errori.cs" />
+    <Compile Include="SDG\GestioneUtenti\Funzionalita.cs" />
+    <Compile Include="SDG\GestioneUtenti\Help.cs" />
+    <Compile Include="SDG\GestioneUtenti\PermessoAccesso.cs" />
+    <Compile Include="SDG\GestioneUtenti\RuoliUtente.cs" />
+    <Compile Include="SDG\GestioneUtenti\Ruolo.cs" />
+    <Compile Include="SDG\GestioneUtenti\Sistema.cs" />
+    <Compile Include="SDG\GestioneUtenti\TestiPagine.cs" />
+    <Compile Include="SDG\GestioneUtenti\Utente.cs" />
+    <Compile Include="SDG\GestioneUtenti\UtenteTrc.cs" />
+    <Compile Include="SDG\Basepage\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDG\Basepage\BasePageMaster.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDG\Basepage\BasePageNoLogin.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SDG\Utility\Utilita.cs" />
+    <Compile Include="BusinessObjects\Centri_di_costo.cs" />
+    <Compile Include="BusinessObjects\CrossUtenteCliente.cs" />
+    <Compile Include="BusinessObjects\CrossUtenteNotifica.cs" />
+    <Compile Include="BusinessObjects\CrossUtenteWorkflow.cs" />
+    <Compile Include="BusinessObjects\Customer.cs" />
+    <Compile Include="BusinessObjects\FileBundleHandler.cs" />
+    <Compile Include="BusinessObjects\Lock.cs" />
+    <Compile Include="BusinessObjects\LogMessaggiWs.cs" />
+    <Compile Include="BusinessObjects\LookupStatoAutorizzazione.cs" />
+    <Compile Include="BusinessObjects\LookupStatoCaricamento.cs" />
+    <Compile Include="BusinessObjects\LookupTipoModulo.cs" />
+    <Compile Include="BusinessObjects\Lookup_tipo_documento.cs" />
+    <Compile Include="BusinessObjects\Lookup_titolo.cs" />
+    <Compile Include="BusinessObjects\MailClick.cs" />
+    <Compile Include="BusinessObjects\Richiedente.cs" />
+    <Compile Include="BusinessObjects\tracciamentoUpload.cs" />
+    <Compile Include="BusinessObjects\TransazioniRichiesta.cs" />
+    <Compile Include="BusinessObjects\Viaggiatori.cs" />
+    <Compile Include="Web References\TRFws\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\Script.ascx.cs">
+      <DependentUpon>Script.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Common\Script.ascx.designer.cs">
+      <DependentUpon>Script.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CrossGruppiClienteUtenti\frm_MSB_CGC.aspx.cs">
+      <DependentUpon>frm_MSB_CGC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CrossGruppiClienteUtenti\frm_MSB_CGC.aspx.designer.cs">
+      <DependentUpon>frm_MSB_CGC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CrossGruppiClienteUtenti\frm_MSE_CGC.aspx.cs">
+      <DependentUpon>frm_MSE_CGC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CrossGruppiClienteUtenti\frm_MSE_CGC.aspx.designer.cs">
+      <DependentUpon>frm_MSE_CGC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Login\frm_LGN.aspx.designer.cs">
+      <DependentUpon>frm_LGN.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CampiNascostiCliente\frm_MSB_CNC.aspx.cs">
+      <DependentUpon>frm_MSB_CNC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CampiNascostiCliente\frm_MSB_CNC.aspx.designer.cs">
+      <DependentUpon>frm_MSB_CNC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\CampiNascostiCliente\frm_MSE_CNC.aspx.cs">
+      <DependentUpon>frm_MSE_CNC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\CampiNascostiCliente\frm_MSE_CNC.aspx.designer.cs">
+      <DependentUpon>frm_MSE_CNC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\CustomerPagerControl.ascx.cs">
+      <DependentUpon>CustomerPagerControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\CustomerPagerControl.ascx.designer.cs">
+      <DependentUpon>CustomerPagerControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\Errors.aspx.cs">
+      <DependentUpon>Errors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Common\Errors.aspx.designer.cs">
+      <DependentUpon>Errors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\Excel.aspx.cs">
+      <DependentUpon>Excel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Common\Excel.aspx.designer.cs">
+      <DependentUpon>Excel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Common\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\Menu.ascx.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Common\Menu.ascx.designer.cs">
+      <DependentUpon>Menu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Common\Top.ascx.cs">
+      <DependentUpon>Top.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Common\Top.ascx.designer.cs">
+      <DependentUpon>Top.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Home\CloseSession.aspx.cs">
+      <DependentUpon>CloseSession.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Home\CloseSession.aspx.designer.cs">
+      <DependentUpon>CloseSession.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Home\frm_HOM.aspx.cs">
+      <DependentUpon>frm_HOM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Home\frm_HOM.aspx.designer.cs">
+      <DependentUpon>frm_HOM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Home\mainpage.aspx.cs">
+      <DependentUpon>mainpage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Home\mainpage.aspx.designer.cs">
+      <DependentUpon>mainpage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Impersonate\frm_MSE_IMP.aspx.cs">
+      <DependentUpon>frm_MSE_IMP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Impersonate\frm_MSE_IMP.aspx.designer.cs">
+      <DependentUpon>frm_MSE_IMP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Login\frm_BYP.aspx.cs">
+      <DependentUpon>frm_BYP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Login\frm_BYP.aspx.designer.cs">
+      <DependentUpon>frm_BYP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Login\frm_LGN.aspx.cs">
+      <DependentUpon>frm_LGN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Login\frm_LGN_2.aspx.cs">
+      <DependentUpon>frm_LGN_2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Login\frm_LGN_2.aspx.designer.cs">
+      <DependentUpon>frm_LGN_2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Login\frm_PWD.aspx.cs">
+      <DependentUpon>frm_PWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Login\frm_PWD.aspx.designer.cs">
+      <DependentUpon>frm_PWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\FileSender\filesender.aspx.cs">
+      <DependentUpon>filesender.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\LookupSocietaCliente\frm_MSB_LSL.aspx.cs">
+      <DependentUpon>frm_MSB_LSL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\LookupSocietaCliente\frm_MSB_LSL.aspx.designer.cs">
+      <DependentUpon>frm_MSB_LSL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\LookupSocietaCliente\frm_MSE_LSL.aspx.cs">
+      <DependentUpon>frm_MSE_LSL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\LookupSocietaCliente\frm_MSE_LSL.aspx.designer.cs">
+      <DependentUpon>frm_MSE_LSL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\ProcessoAutorizzativo\frm_MSE_PAU.aspx.cs">
+      <DependentUpon>frm_MSE_PAU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\ProcessoAutorizzativo\frm_MSE_PAU.aspx.designer.cs">
+      <DependentUpon>frm_MSE_PAU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Ruoli\frm_MSB_RUL.aspx.cs">
+      <DependentUpon>frm_MSB_RUL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Ruoli\frm_MSB_RUL.aspx.designer.cs">
+      <DependentUpon>frm_MSB_RUL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Ruoli\frm_MSE_RUL.aspx.cs">
+      <DependentUpon>frm_MSE_RUL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Ruoli\frm_MSE_RUL.aspx.designer.cs">
+      <DependentUpon>frm_MSE_RUL.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Ruoli\frm_MSE_RUL_UTE.aspx.cs">
+      <DependentUpon>frm_MSE_RUL_UTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Ruoli\frm_MSE_RUL_UTE.aspx.designer.cs">
+      <DependentUpon>frm_MSE_RUL_UTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSB_RPG_UTE.aspx.cs">
+      <DependentUpon>frm_MSB_RPG_UTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSB_RPG_UTE.aspx.designer.cs">
+      <DependentUpon>frm_MSB_RPG_UTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSB_UTE.aspx.designer.cs">
+      <DependentUpon>frm_MSB_UTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSB_UTE_PWD.aspx.cs">
+      <DependentUpon>frm_MSB_UTE_PWD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSB_UTE_PWD.aspx.designer.cs">
+      <DependentUpon>frm_MSB_UTE_PWD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSE_UTE_CLI.aspx.cs">
+      <DependentUpon>frm_MSE_UTE_CLI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSE_UTE_CLI.aspx.designer.cs">
+      <DependentUpon>frm_MSE_UTE_CLI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSE_UTE_WRF.aspx.cs">
+      <DependentUpon>frm_MSE_UTE_WRF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSB_UTE.aspx.cs">
+      <DependentUpon>frm_MSB_UTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSE_UTE.aspx.cs">
+      <DependentUpon>frm_MSE_UTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSE_UTE.aspx.designer.cs">
+      <DependentUpon>frm_MSE_UTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSE_UTE_WRF.aspx.designer.cs">
+      <DependentUpon>frm_MSE_UTE_WRF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSU_UTE.aspx.cs">
+      <DependentUpon>frm_MSU_UTE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\Utenti\frm_MSU_UTE.aspx.designer.cs">
+      <DependentUpon>frm_MSU_UTE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Web\WebFormTestWs.aspx.cs">
+      <DependentUpon>WebFormTestWs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\WebFormTestWs.aspx.designer.cs">
+      <DependentUpon>WebFormTestWs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="XmlData\TRF_Schema.cs">
+      <DependentUpon>TRF_Schema.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="XmlData\TRF_Schema.Designer.cs">
+      <DependentUpon>TRF_Schema.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TRFws\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\TRFws\wsTRFRichiesta.wsdl" />
+    <Content Include="Web\assets\plugins\jqueryui\package.json" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-grid.css.map" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-grid.min.css.map" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-reboot.css.map" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap-reboot.min.css.map" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap.css.map" />
+    <Content Include="Web\assets\plugins\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.bundle.js.map" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.js.map" />
+    <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.min.js.map" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\.DS_Store" />
+    <Content Include="Web\assets\plugins\ion-rangeslider\js\.DS_Store" />
+    <None Include="XmlData\TRF_Schema.xsc">
+      <DependentUpon>TRF_Schema.xsd</DependentUpon>
+    </None>
+    <None Include="XmlData\TRF_Schema.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TRF_Schema.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="XmlData\TRF_Schema.xss">
+      <DependentUpon>TRF_Schema.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://localhost/TRFWs/wsTRFRichiesta.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\TRFws\</RelPath>
+      <UpdateFromURL>http://localhost/TRFWs/wsTRFRichiesta.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>TRF_TRFws_wsTRFRichiesta</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="obj\" />
+    <Folder Include="Web\UserFiles\" />
+    <Folder Include="Web\Utenti\Files\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4909</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:4550/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\packages\Grpc.Core.1.18.0-pre1\build\net45\Grpc.Core.targets" Condition="Exists('..\packages\Grpc.Core.1.18.0-pre1\build\net45\Grpc.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Questo progetto fa riferimento a uno o più pacchetti NuGet che non sono presenti in questo computer. Usare lo strumento di ripristino dei pacchetti NuGet per scaricarli. Per altre informazioni, vedere http://go.microsoft.com/fwlink/?LinkID=322105. Il file mancante è {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Grpc.Core.1.18.0-pre1\build\net45\Grpc.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Grpc.Core.1.18.0-pre1\build\net45\Grpc.Core.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,11 @@
+  html, body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+#subTop, #Menu_sidebarnav, #Menu_divButtonMenu, #footer, 
+    #mseRiv #lblNote, #mseRiv #txtNote, #mseRiv #allegaFilePrenotazione, #mseRiv #divButton {display:none;}
+#content{width:90%;}
+#intestazioneBrowser {display:none;}
+.page-wrapper {padding:0;}

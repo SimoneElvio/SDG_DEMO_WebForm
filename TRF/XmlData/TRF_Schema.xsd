@@ -1,0 +1,489 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatiRichiesta" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="CONNECTION_STRING" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CONNECTION_STRING (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.CONNECTION_STRING.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatiRichiesta" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DatiRichiesta" msprop:Generator_DataSetName="DatiRichiesta">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Errori" msprop:Generator_UserTableName="Errori" msprop:Generator_RowDeletedName="ErroriRowDeleted" msprop:Generator_RowChangedName="ErroriRowChanged" msprop:Generator_RowClassName="ErroriRow" msprop:Generator_RowChangingName="ErroriRowChanging" msprop:Generator_RowEvArgName="ErroriRowChangeEvent" msprop:Generator_RowEvHandlerName="ErroriRowChangeEventHandler" msprop:Generator_TableClassName="ErroriDataTable" msprop:Generator_TableVarName="tableErrori" msprop:Generator_RowDeletingName="ErroriRowDeleting" msprop:Generator_TablePropName="Errori">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Codice" msdata:Caption="Codice errore" msprop:Generator_UserColumnName="Codice" msprop:Generator_ColumnPropNameInRow="Codice" msprop:Generator_ColumnVarNameInTable="columnCodice" msprop:Generator_ColumnPropNameInTable="CodiceColumn" type="xs:int" />
+              <xs:element name="Descrizione" msdata:Caption="Descrizione errore" msprop:Generator_UserColumnName="Descrizione" msprop:Generator_ColumnPropNameInRow="Descrizione" msprop:Generator_ColumnVarNameInTable="columnDescrizione" msprop:Generator_ColumnPropNameInTable="DescrizioneColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Richiesta" msprop:Generator_UserTableName="Richiesta" msprop:Generator_RowDeletedName="RichiestaRowDeleted" msprop:Generator_RowChangedName="RichiestaRowChanged" msprop:Generator_RowClassName="RichiestaRow" msprop:Generator_RowChangingName="RichiestaRowChanging" msprop:Generator_RowEvArgName="RichiestaRowChangeEvent" msprop:Generator_RowEvHandlerName="RichiestaRowChangeEventHandler" msprop:Generator_TableClassName="RichiestaDataTable" msprop:Generator_TableVarName="tableRichiesta" msprop:Generator_RowDeletingName="RichiestaRowDeleting" msprop:Generator_TablePropName="Richiesta">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdMissione" msdata:Caption="Codice missione yyyyMMdd-HHmmss-nnnnnnnnnn" msprop:Generator_UserColumnName="IdMissione" msprop:Generator_ColumnPropNameInRow="IdMissione" msprop:Generator_ColumnVarNameInTable="columnIdMissione" msprop:Generator_ColumnPropNameInTable="IdMissioneColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="26" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Destinazione" msdata:Caption="Destinazione primaria" msprop:Generator_UserColumnName="Destinazione" msprop:Generator_ColumnPropNameInRow="Destinazione" msprop:Generator_ColumnVarNameInTable="columnDestinazione" msprop:Generator_ColumnPropNameInTable="DestinazioneColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataConsegna" msdata:Caption="Data consegna titoli" msprop:Generator_UserColumnName="DataConsegna" msprop:Generator_ColumnPropNameInRow="DataConsegna" msprop:Generator_ColumnVarNameInTable="columnDataConsegna" msprop:Generator_ColumnPropNameInTable="DataConsegnaColumn" type="xs:dateTime" />
+              <xs:element name="CodicePA" msdata:Caption="Codice posizione anagrafica" msprop:Generator_UserColumnName="CodicePA" msprop:Generator_ColumnPropNameInRow="CodicePA" msprop:Generator_ColumnVarNameInTable="columnCodicePA" msprop:Generator_ColumnPropNameInTable="CodicePAColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cognome" msdata:Caption="Cognome del richiedente" msprop:Generator_UserColumnName="Cognome" msprop:Generator_ColumnPropNameInRow="Cognome" msprop:Generator_ColumnVarNameInTable="columnCognome" msprop:Generator_ColumnPropNameInTable="CognomeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nome" msdata:Caption="Nome del richiedente" msprop:Generator_UserColumnName="Nome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInTable="NomeColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Telefono" msdata:Caption="Telefono del richiedente" msprop:Generator_UserColumnName="Telefono" msprop:Generator_ColumnPropNameInRow="Telefono" msprop:Generator_ColumnVarNameInTable="columnTelefono" msprop:Generator_ColumnPropNameInTable="TelefonoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Email" msdata:Caption="Email del richiedente" msprop:Generator_UserColumnName="Email" msprop:Generator_ColumnPropNameInRow="Email" msprop:Generator_ColumnVarNameInTable="columnEmail" msprop:Generator_ColumnPropNameInTable="EmailColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EmailConsegna" msdata:Caption="Email di consegna titoli del richiedente" msprop:Generator_UserColumnName="EmailConsegna" msprop:Generator_ColumnPropNameInRow="EmailConsegna" msprop:Generator_ColumnVarNameInTable="columnEmailConsegna" msprop:Generator_ColumnPropNameInTable="EmailConsegnaColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Aerei" msprop:Generator_UserTableName="Aerei" msprop:Generator_RowDeletedName="AereiRowDeleted" msprop:Generator_RowChangedName="AereiRowChanged" msprop:Generator_RowClassName="AereiRow" msprop:Generator_RowChangingName="AereiRowChanging" msprop:Generator_RowEvArgName="AereiRowChangeEvent" msprop:Generator_RowEvHandlerName="AereiRowChangeEventHandler" msprop:Generator_TableClassName="AereiDataTable" msprop:Generator_TableVarName="tableAerei" msprop:Generator_RowDeletingName="AereiRowDeleting" msprop:Generator_TablePropName="Aerei">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:Caption="Identificativo della prenotazione" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="DataInizio" msdata:Caption="Data/Ora della partenza dell'aereo" msprop:Generator_UserColumnName="DataInizio" msprop:Generator_ColumnPropNameInRow="DataInizio" msprop:Generator_ColumnVarNameInTable="columnDataInizio" msprop:Generator_ColumnPropNameInTable="DataInizioColumn" type="xs:dateTime" />
+              <xs:element name="LuogoInizio" msdata:Caption="Luogo di partenza dell'aereo" msprop:Generator_UserColumnName="LuogoInizio" msprop:Generator_ColumnPropNameInRow="LuogoInizio" msprop:Generator_ColumnVarNameInTable="columnLuogoInizio" msprop:Generator_ColumnPropNameInTable="LuogoInizioColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LuogoFine" msdata:Caption="Luogo di arrivo dell'aereo" msprop:Generator_UserColumnName="LuogoFine" msprop:Generator_ColumnPropNameInRow="LuogoFine" msprop:Generator_ColumnVarNameInTable="columnLuogoFine" msprop:Generator_ColumnPropNameInTable="LuogoFineColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceTitolo" msdata:Caption="Numero del biglietto" msprop:Generator_UserColumnName="CodiceTitolo" msprop:Generator_ColumnPropNameInRow="CodiceTitolo" msprop:Generator_ColumnVarNameInTable="columnCodiceTitolo" msprop:Generator_ColumnPropNameInTable="CodiceTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittenteTitolo" msdata:Caption="Nome del vettore" msprop:Generator_UserColumnName="MittenteTitolo" msprop:Generator_ColumnPropNameInRow="MittenteTitolo" msprop:Generator_ColumnVarNameInTable="columnMittenteTitolo" msprop:Generator_ColumnPropNameInTable="MittenteTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Importo" msdata:Caption="Importo totale" msprop:Generator_UserColumnName="Importo" msprop:Generator_ColumnPropNameInRow="Importo" msprop:Generator_ColumnVarNameInTable="columnImporto" msprop:Generator_ColumnPropNameInTable="ImportoColumn" type="xs:double" />
+              <xs:element name="ModoPagamento" msdata:Caption="Modo di pagamento del titolo" msprop:Generator_UserColumnName="ModoPagamento" msprop:Generator_ColumnPropNameInRow="ModoPagamento" msprop:Generator_ColumnVarNameInTable="columnModoPagamento" msprop:Generator_ColumnPropNameInTable="ModoPagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittentePagamento" msdata:Caption="Mittente del pagamento del titolo" msprop:Generator_UserColumnName="MittentePagamento" msprop:Generator_ColumnPropNameInRow="MittentePagamento" msprop:Generator_ColumnVarNameInTable="columnMittentePagamento" msprop:Generator_ColumnPropNameInTable="MittentePagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceMittente" msprop:Generator_UserColumnName="CodiceMittente" msprop:Generator_ColumnVarNameInTable="columnCodiceMittente" msprop:Generator_ColumnPropNameInRow="CodiceMittente" msprop:Generator_ColumnPropNameInTable="CodiceMittenteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Hotel" msprop:Generator_UserTableName="Hotel" msprop:Generator_RowDeletedName="HotelRowDeleted" msprop:Generator_RowChangedName="HotelRowChanged" msprop:Generator_RowClassName="HotelRow" msprop:Generator_RowChangingName="HotelRowChanging" msprop:Generator_RowEvArgName="HotelRowChangeEvent" msprop:Generator_RowEvHandlerName="HotelRowChangeEventHandler" msprop:Generator_TableClassName="HotelDataTable" msprop:Generator_TableVarName="tableHotel" msprop:Generator_RowDeletingName="HotelRowDeleting" msprop:Generator_TablePropName="Hotel">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:Caption="Identificativo della prenotazione" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="Luogo" msdata:Caption="Luogo di pernottamento" msprop:Generator_UserColumnName="Luogo" msprop:Generator_ColumnPropNameInRow="Luogo" msprop:Generator_ColumnVarNameInTable="columnLuogo" msprop:Generator_ColumnPropNameInTable="LuogoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataInizio" msdata:Caption="Data/Ora di inizio pernottamento" msprop:Generator_UserColumnName="DataInizio" msprop:Generator_ColumnPropNameInRow="DataInizio" msprop:Generator_ColumnVarNameInTable="columnDataInizio" msprop:Generator_ColumnPropNameInTable="DataInizioColumn" type="xs:dateTime" />
+              <xs:element name="Notti" msdata:Caption="Numero notti di pernottamento" msprop:Generator_UserColumnName="Notti" msprop:Generator_ColumnPropNameInRow="Notti" msprop:Generator_ColumnVarNameInTable="columnNotti" msprop:Generator_ColumnPropNameInTable="NottiColumn" type="xs:int" />
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceTitolo" msdata:Caption="Numero del voucher" msprop:Generator_UserColumnName="CodiceTitolo" msprop:Generator_ColumnPropNameInRow="CodiceTitolo" msprop:Generator_ColumnVarNameInTable="columnCodiceTitolo" msprop:Generator_ColumnPropNameInTable="CodiceTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittenteTitolo" msdata:Caption="Nome dell'albergo" msprop:Generator_UserColumnName="MittenteTitolo" msprop:Generator_ColumnPropNameInRow="MittenteTitolo" msprop:Generator_ColumnVarNameInTable="columnMittenteTitolo" msprop:Generator_ColumnPropNameInTable="MittenteTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Importo" msdata:Caption="Importo totale" msprop:Generator_UserColumnName="Importo" msprop:Generator_ColumnPropNameInRow="Importo" msprop:Generator_ColumnVarNameInTable="columnImporto" msprop:Generator_ColumnPropNameInTable="ImportoColumn" type="xs:double" />
+              <xs:element name="ModoPagamento" msdata:Caption="Modo di pagamento del titolo" msprop:Generator_UserColumnName="ModoPagamento" msprop:Generator_ColumnPropNameInRow="ModoPagamento" msprop:Generator_ColumnVarNameInTable="columnModoPagamento" msprop:Generator_ColumnPropNameInTable="ModoPagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittentePagamento" msdata:Caption="Mittente del pagamento del titolo" msprop:Generator_UserColumnName="MittentePagamento" msprop:Generator_ColumnPropNameInRow="MittentePagamento" msprop:Generator_ColumnVarNameInTable="columnMittentePagamento" msprop:Generator_ColumnPropNameInTable="MittentePagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceMittente" msdata:Caption="Cod. Hotel HRG" msprop:Generator_UserColumnName="CodiceMittente" msprop:Generator_ColumnVarNameInTable="columnCodiceMittente" msprop:Generator_ColumnPropNameInRow="CodiceMittente" msprop:Generator_ColumnPropNameInTable="CodiceMittenteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="6" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Auto" msprop:Generator_UserTableName="Auto" msprop:Generator_RowDeletedName="AutoRowDeleted" msprop:Generator_RowChangedName="AutoRowChanged" msprop:Generator_RowClassName="AutoRow" msprop:Generator_RowChangingName="AutoRowChanging" msprop:Generator_RowEvArgName="AutoRowChangeEvent" msprop:Generator_RowEvHandlerName="AutoRowChangeEventHandler" msprop:Generator_TableClassName="AutoDataTable" msprop:Generator_TableVarName="tableAuto" msprop:Generator_RowDeletingName="AutoRowDeleting" msprop:Generator_TablePropName="Auto">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:Caption="Identificativo della prenotazione" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="DataInizio" msdata:Caption="Data/Ora dell'inizio del noleggio" msprop:Generator_UserColumnName="DataInizio" msprop:Generator_ColumnPropNameInRow="DataInizio" msprop:Generator_ColumnVarNameInTable="columnDataInizio" msprop:Generator_ColumnPropNameInTable="DataInizioColumn" type="xs:dateTime" />
+              <xs:element name="LuogoInizio" msdata:Caption="Luogo di noleggio dell'auto" msprop:Generator_UserColumnName="LuogoInizio" msprop:Generator_ColumnPropNameInRow="LuogoInizio" msprop:Generator_ColumnVarNameInTable="columnLuogoInizio" msprop:Generator_ColumnPropNameInTable="LuogoInizioColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataFine" msdata:Caption="Data/Ora della riconsegna dell'auto" msprop:Generator_UserColumnName="DataFine" msprop:Generator_ColumnPropNameInRow="DataFine" msprop:Generator_ColumnVarNameInTable="columnDataFine" msprop:Generator_ColumnPropNameInTable="DataFineColumn" type="xs:dateTime" />
+              <xs:element name="LuogoFine" msdata:Caption="Luogo di restituzione dell'auto" msprop:Generator_UserColumnName="LuogoFine" msprop:Generator_ColumnPropNameInRow="LuogoFine" msprop:Generator_ColumnVarNameInTable="columnLuogoFine" msprop:Generator_ColumnPropNameInTable="LuogoFineColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceTitolo" msdata:Caption="Numero di prenotazione" msprop:Generator_UserColumnName="CodiceTitolo" msprop:Generator_ColumnPropNameInRow="CodiceTitolo" msprop:Generator_ColumnVarNameInTable="columnCodiceTitolo" msprop:Generator_ColumnPropNameInTable="CodiceTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittenteTitolo" msdata:Caption="Nome del noleggiatore" msprop:Generator_UserColumnName="MittenteTitolo" msprop:Generator_ColumnPropNameInRow="MittenteTitolo" msprop:Generator_ColumnVarNameInTable="columnMittenteTitolo" msprop:Generator_ColumnPropNameInTable="MittenteTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ncc" msdata:Caption="Noleggio con conducente" msprop:Generator_UserColumnName="Ncc" msprop:Generator_ColumnPropNameInRow="Ncc" msprop:Generator_ColumnVarNameInTable="columnNcc" msprop:Generator_ColumnPropNameInTable="NccColumn" type="xs:boolean" />
+              <xs:element name="Importo" msdata:Caption="Importo totale" msprop:Generator_UserColumnName="Importo" msprop:Generator_ColumnPropNameInRow="Importo" msprop:Generator_ColumnVarNameInTable="columnImporto" msprop:Generator_ColumnPropNameInTable="ImportoColumn" type="xs:double" />
+              <xs:element name="ModoPagamento" msdata:Caption="Modo di pagamento del titolo" msprop:Generator_UserColumnName="ModoPagamento" msprop:Generator_ColumnPropNameInRow="ModoPagamento" msprop:Generator_ColumnVarNameInTable="columnModoPagamento" msprop:Generator_ColumnPropNameInTable="ModoPagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittentePagamento" msdata:Caption="Mittente del pagamento del titolo" msprop:Generator_UserColumnName="MittentePagamento" msprop:Generator_ColumnPropNameInRow="MittentePagamento" msprop:Generator_ColumnVarNameInTable="columnMittentePagamento" msprop:Generator_ColumnPropNameInTable="MittentePagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceMittente" msprop:Generator_UserColumnName="CodiceMittente" msprop:Generator_ColumnPropNameInRow="CodiceMittente" msprop:Generator_ColumnVarNameInTable="columnCodiceMittente" msprop:Generator_ColumnPropNameInTable="CodiceMittenteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Treni" msprop:Generator_UserTableName="Treni" msprop:Generator_RowDeletedName="TreniRowDeleted" msprop:Generator_RowChangedName="TreniRowChanged" msprop:Generator_RowClassName="TreniRow" msprop:Generator_RowChangingName="TreniRowChanging" msprop:Generator_RowEvArgName="TreniRowChangeEvent" msprop:Generator_RowEvHandlerName="TreniRowChangeEventHandler" msprop:Generator_TableClassName="TreniDataTable" msprop:Generator_TableVarName="tableTreni" msprop:Generator_RowDeletingName="TreniRowDeleting" msprop:Generator_TablePropName="Treni">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:Caption="Identificativo della prenotazione" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="DataInizio" msdata:Caption="Data/Ora della partenza del treno" msprop:Generator_UserColumnName="DataInizio" msprop:Generator_ColumnPropNameInRow="DataInizio" msprop:Generator_ColumnVarNameInTable="columnDataInizio" msprop:Generator_ColumnPropNameInTable="DataInizioColumn" type="xs:dateTime" />
+              <xs:element name="LuogoInizio" msdata:Caption="Luogo di partenza del treno" msprop:Generator_UserColumnName="LuogoInizio" msprop:Generator_ColumnPropNameInRow="LuogoInizio" msprop:Generator_ColumnVarNameInTable="columnLuogoInizio" msprop:Generator_ColumnPropNameInTable="LuogoInizioColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LuogoFine" msdata:Caption="Luogo di arrivo del treno" msprop:Generator_UserColumnName="LuogoFine" msprop:Generator_ColumnPropNameInRow="LuogoFine" msprop:Generator_ColumnVarNameInTable="columnLuogoFine" msprop:Generator_ColumnPropNameInTable="LuogoFineColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceTitolo" msdata:Caption="Numero del biglietto" msprop:Generator_UserColumnName="CodiceTitolo" msprop:Generator_ColumnPropNameInRow="CodiceTitolo" msprop:Generator_ColumnVarNameInTable="columnCodiceTitolo" msprop:Generator_ColumnPropNameInTable="CodiceTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittenteTitolo" msdata:Caption="Nome del vettore" msprop:Generator_UserColumnName="MittenteTitolo" msprop:Generator_ColumnPropNameInRow="MittenteTitolo" msprop:Generator_ColumnVarNameInTable="columnMittenteTitolo" msprop:Generator_ColumnPropNameInTable="MittenteTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Importo" msdata:Caption="Importo totale" msprop:Generator_UserColumnName="Importo" msprop:Generator_ColumnPropNameInRow="Importo" msprop:Generator_ColumnVarNameInTable="columnImporto" msprop:Generator_ColumnPropNameInTable="ImportoColumn" type="xs:double" />
+              <xs:element name="ModoPagamento" msdata:Caption="Modo di pagamento del titolo" msprop:Generator_UserColumnName="ModoPagamento" msprop:Generator_ColumnPropNameInRow="ModoPagamento" msprop:Generator_ColumnVarNameInTable="columnModoPagamento" msprop:Generator_ColumnPropNameInTable="ModoPagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittentePagamento" msdata:Caption="Mittente del pagamento del titolo" msprop:Generator_UserColumnName="MittentePagamento" msprop:Generator_ColumnPropNameInRow="MittentePagamento" msprop:Generator_ColumnVarNameInTable="columnMittentePagamento" msprop:Generator_ColumnPropNameInTable="MittentePagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceMittente" msprop:Generator_UserColumnName="CodiceMittente" msprop:Generator_ColumnPropNameInRow="CodiceMittente" msprop:Generator_ColumnVarNameInTable="columnCodiceMittente" msprop:Generator_ColumnPropNameInTable="CodiceMittenteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Traghetti" msprop:Generator_UserTableName="Traghetti" msprop:Generator_RowDeletedName="TraghettiRowDeleted" msprop:Generator_RowChangedName="TraghettiRowChanged" msprop:Generator_RowClassName="TraghettiRow" msprop:Generator_RowChangingName="TraghettiRowChanging" msprop:Generator_RowEvArgName="TraghettiRowChangeEvent" msprop:Generator_RowEvHandlerName="TraghettiRowChangeEventHandler" msprop:Generator_TableClassName="TraghettiDataTable" msprop:Generator_TableVarName="tableTraghetti" msprop:Generator_RowDeletingName="TraghettiRowDeleting" msprop:Generator_TablePropName="Traghetti">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:Caption="Identificativo della prenotazione" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" minOccurs="0" />
+              <xs:element name="DataInizio" msdata:Caption="Data/Ora della partenza del traghetto" msprop:Generator_UserColumnName="DataInizio" msprop:Generator_ColumnPropNameInRow="DataInizio" msprop:Generator_ColumnVarNameInTable="columnDataInizio" msprop:Generator_ColumnPropNameInTable="DataInizioColumn" type="xs:dateTime" />
+              <xs:element name="LuogoInizio" msdata:Caption="Luogo di partenza del traghetto" msprop:Generator_UserColumnName="LuogoInizio" msprop:Generator_ColumnPropNameInRow="LuogoInizio" msprop:Generator_ColumnVarNameInTable="columnLuogoInizio" msprop:Generator_ColumnPropNameInTable="LuogoInizioColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LuogoFine" msdata:Caption="Luogo di arrivo del traghetto" msprop:Generator_UserColumnName="LuogoFine" msprop:Generator_ColumnPropNameInRow="LuogoFine" msprop:Generator_ColumnVarNameInTable="columnLuogoFine" msprop:Generator_ColumnPropNameInTable="LuogoFineColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceTitolo" msdata:Caption="Numero del biglietto" msprop:Generator_UserColumnName="CodiceTitolo" msprop:Generator_ColumnPropNameInRow="CodiceTitolo" msprop:Generator_ColumnVarNameInTable="columnCodiceTitolo" msprop:Generator_ColumnPropNameInTable="CodiceTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittenteTitolo" msdata:Caption="Nome del vettore" msprop:Generator_UserColumnName="MittenteTitolo" msprop:Generator_ColumnPropNameInRow="MittenteTitolo" msprop:Generator_ColumnVarNameInTable="columnMittenteTitolo" msprop:Generator_ColumnPropNameInTable="MittenteTitoloColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Importo" msdata:Caption="Importo totale" msprop:Generator_UserColumnName="Importo" msprop:Generator_ColumnPropNameInRow="Importo" msprop:Generator_ColumnVarNameInTable="columnImporto" msprop:Generator_ColumnPropNameInTable="ImportoColumn" type="xs:double" />
+              <xs:element name="ModoPagamento" msdata:Caption="Modo di pagamento del titolo" msprop:Generator_UserColumnName="ModoPagamento" msprop:Generator_ColumnPropNameInRow="ModoPagamento" msprop:Generator_ColumnVarNameInTable="columnModoPagamento" msprop:Generator_ColumnPropNameInTable="ModoPagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MittentePagamento" msdata:Caption="Mittente del pagamento del titolo" msprop:Generator_UserColumnName="MittentePagamento" msprop:Generator_ColumnPropNameInRow="MittentePagamento" msprop:Generator_ColumnVarNameInTable="columnMittentePagamento" msprop:Generator_ColumnPropNameInTable="MittentePagamentoColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="254" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CodiceMittente" msprop:Generator_UserColumnName="CodiceMittente" msprop:Generator_ColumnPropNameInRow="CodiceMittente" msprop:Generator_ColumnVarNameInTable="columnCodiceMittente" msprop:Generator_ColumnPropNameInTable="CodiceMittenteColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Comunicazioni" msprop:Generator_UserTableName="Comunicazioni" msprop:Generator_RowDeletedName="ComunicazioniRowDeleted" msprop:Generator_RowChangedName="ComunicazioniRowChanged" msprop:Generator_RowClassName="ComunicazioniRow" msprop:Generator_RowChangingName="ComunicazioniRowChanging" msprop:Generator_RowEvArgName="ComunicazioniRowChangeEvent" msprop:Generator_RowEvHandlerName="ComunicazioniRowChangeEventHandler" msprop:Generator_TableClassName="ComunicazioniDataTable" msprop:Generator_TableVarName="tableComunicazioni" msprop:Generator_RowDeletingName="ComunicazioniRowDeleting" msprop:Generator_TablePropName="Comunicazioni">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:Caption="Identificativo della comunicazione" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:long" />
+              <xs:element name="Data" msdata:Caption="Data/Ora della comunicazione" msprop:Generator_UserColumnName="Data" msprop:Generator_ColumnPropNameInRow="Data" msprop:Generator_ColumnVarNameInTable="columnData" msprop:Generator_ColumnPropNameInTable="DataColumn" type="xs:dateTime" />
+              <xs:element name="Stato" msdata:Caption="Stato attuale della richiesta" msprop:Generator_UserColumnName="Stato" msprop:Generator_ColumnPropNameInRow="Stato" msprop:Generator_ColumnVarNameInTable="columnStato" msprop:Generator_ColumnPropNameInTable="StatoColumn" type="xs:int" />
+              <xs:element name="Utente" msdata:Caption="Cognome e nome del mittente della comunicazione" msprop:Generator_UserColumnName="Utente" msprop:Generator_ColumnPropNameInRow="Utente" msprop:Generator_ColumnVarNameInTable="columnUtente" msprop:Generator_ColumnPropNameInTable="UtenteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="60" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:Generator_ColumnPropNameInRow="Note" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Tratte_Alternative" msprop:Generator_UserTableName="Tratte_Alternative" msprop:Generator_RowDeletedName="Tratte_AlternativeRowDeleted" msprop:Generator_RowChangedName="Tratte_AlternativeRowChanged" msprop:Generator_RowClassName="Tratte_AlternativeRow" msprop:Generator_RowChangingName="Tratte_AlternativeRowChanging" msprop:Generator_RowEvArgName="Tratte_AlternativeRowChangeEvent" msprop:Generator_RowEvHandlerName="Tratte_AlternativeRowChangeEventHandler" msprop:Generator_TableClassName="Tratte_AlternativeDataTable" msprop:Generator_TableVarName="tableTratte_Alternative" msprop:Generator_RowDeletingName="Tratte_AlternativeRowDeleting" msprop:Generator_TablePropName="Tratte_Alternative">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="IdPrenotazioneAerea" msprop:Generator_UserColumnName="IdPrenotazioneAerea" msprop:Generator_ColumnVarNameInTable="columnIdPrenotazioneAerea" msprop:Generator_ColumnPropNameInRow="IdPrenotazioneAerea" msprop:Generator_ColumnPropNameInTable="IdPrenotazioneAereaColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="ReasonCode" msdata:Caption="Reason Code" msprop:Generator_UserColumnName="ReasonCode" msprop:Generator_ColumnVarNameInTable="columnReasonCode" msprop:Generator_ColumnPropNameInRow="ReasonCode" msprop:Generator_ColumnPropNameInTable="ReasonCodeColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LuogoInizio" msdata:Caption="Aereoporto di partenza" msprop:Generator_UserColumnName="LuogoInizio" msprop:Generator_ColumnVarNameInTable="columnLuogoInizio" msprop:Generator_ColumnPropNameInRow="LuogoInizio" msprop:Generator_ColumnPropNameInTable="LuogoInizioColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LuogoFine" msdata:Caption="Aereoporto di Arrivo" msprop:Generator_UserColumnName="LuogoFine" msprop:Generator_ColumnVarNameInTable="columnLuogoFine" msprop:Generator_ColumnPropNameInRow="LuogoFine" msprop:Generator_ColumnPropNameInTable="LuogoFineColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vettore" msdata:Caption="Cod. Internazionale del Vettore o Compagnia Aerea" msprop:Generator_UserColumnName="Vettore" msprop:Generator_ColumnVarNameInTable="columnVettore" msprop:Generator_ColumnPropNameInRow="Vettore" msprop:Generator_ColumnPropNameInTable="VettoreColumn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataInizio" msdata:Caption="Data Ora Partenza" msprop:Generator_UserColumnName="DataInizio" msprop:Generator_ColumnVarNameInTable="columnDataInizio" msprop:Generator_ColumnPropNameInRow="DataInizio" msprop:Generator_ColumnPropNameInTable="DataInizioColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Tariffa" msprop:Generator_UserColumnName="Tariffa" msprop:Generator_ColumnVarNameInTable="columnTariffa" msprop:Generator_ColumnPropNameInRow="Tariffa" msprop:Generator_ColumnPropNameInTable="TariffaColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Tasse" msprop:Generator_UserColumnName="Tasse" msprop:Generator_ColumnVarNameInTable="columnTasse" msprop:Generator_ColumnPropNameInRow="Tasse" msprop:Generator_ColumnPropNameInTable="TasseColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="Importo" msdata:Caption="Importo totale comprensivo di tasse" msprop:Generator_UserColumnName="Importo" msprop:Generator_ColumnVarNameInTable="columnImporto" msprop:Generator_ColumnPropNameInRow="Importo" msprop:Generator_ColumnPropNameInTable="ImportoColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="FlagTrattaSelezionata" msdata:Caption="Flag che indica quale delle 3 tratte proposto è stata selezionata" msprop:Generator_UserColumnName="FlagTrattaSelezionata" msprop:Generator_ColumnVarNameInTable="columnFlagTrattaSelezionata" msprop:Generator_ColumnPropNameInRow="FlagTrattaSelezionata" msprop:Generator_ColumnPropNameInTable="FlagTrattaSelezionataColumn" type="xs:int" minOccurs="0" />
+              <xs:element name="Note" msprop:Generator_UserColumnName="Note" msprop:nullValue="_null" msprop:Generator_ColumnVarNameInTable="columnNote" msprop:Generator_ColumnPropNameInTable="NoteColumn" msprop:Generator_ColumnPropNameInRow="Note" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
