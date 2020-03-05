@@ -48,7 +48,8 @@ RUOLI\_UTENTE|Cross tra Ruoli e Utenti
 SESSIONI\_UTENTI|Numero di sessioni aperte per ogni utente. Solitamente dovrebbe essere solo 1
 SISTEMA|Altre configurazioni di base in aggiunta alla tabella CONFIGURATION\_SETTING
 TESTI\_PAGINE|*
-UTENTE|Anagrafica utenti
+UTENTE|Anagrafica utenti. La password è criptata, nel caso fosse necessario resettarla questo codice E7-E2-B6-A2-77-30-60-BE-B7-A1-17-A3-21-34-C1-83 corrisponde a ***password%***
+
 
 ### Stored Procedure ###
 
