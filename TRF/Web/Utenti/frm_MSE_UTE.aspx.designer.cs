@@ -102,15 +102,6 @@ public partial class Web_Utenti_frm_MSE_UTE {
     protected global::System.Web.UI.WebControls.Button ButtonSalva;
     
     /// <summary>
-    /// Controllo ButtonInviaPwd.
-    /// </summary>
-    /// <remarks>
-    /// Campo generato automaticamente.
-    /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Button ButtonInviaPwd;
-    
-    /// <summary>
     /// Controllo divRecordError.
     /// </summary>
     /// <remarks>

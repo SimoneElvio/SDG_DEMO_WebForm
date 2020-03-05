@@ -24,7 +24,6 @@ using System.Web.UI.WebControls;
 using SDG.GestioneUtenti;
 using SDG.GestioneUtenti.Web;
 using Microsoft.Practices.EnterpriseLibrary.ExceptionHandling;
-using BusinessObjects;
 using SDG.WorkFlow;
 
 public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
@@ -49,11 +48,6 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
     {
         try
         {
-
-            //PanelRuoloUtente.Visible = true;
-
-            //Ripresa parametri di pagina
-
             qMODALITA = Request.QueryString["MODALITA"];
             qPROVENIENZA = Request.QueryString["PROVENIENZA"];
 
@@ -90,7 +84,7 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
                     objRuoli.SqlWhereClause += " OR RUL_ID_RUOLO IN(SELECT RUL_ID_RUOLO FROM RUOLI_UTENTE WHERE UTE_ID_UTENTE = " + qUTE_ID_UTENTE + " AND URL_ID_RUOLI_UTENTE = " + qURL_ID_RUOLI_UTENTE + ") ";
                 objRuoli.SqlWhereClause += ") ";
 
-               txtRUL_ID_RUOLO.DataSource = objRuoli.getListDropDown();
+                txtRUL_ID_RUOLO.DataSource = objRuoli.getListDropDown();
                 txtRUL_ID_RUOLO.DataValueField = "RUL_ID_RUOLO";
                 txtRUL_ID_RUOLO.DataTextField = "RUL_RUOLO";
                 txtRUL_ID_RUOLO.DataBind();
@@ -150,16 +144,6 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
                         }
                     }
                 }
-               
-                
-                //foreach (DataRow dr in dsUtenti.Tables[0].Rows)
-                //{
-                //    if (txtUTE_ID_UTENTE.Items[i].Value.CompareTo(Convert.ToString(dr["UTE_ID_UTENTE"])) == 0)
-                //    {
-                //        if (!Convert.ToBoolean(dr["UTE_STATO_UTENTE"]))
-                //            txtUTE_ID_UTENTE.Items[i].Attributes["disabled"] = "disabled";
-                //    }
-                //}
             }
 
             // Campi read-only
@@ -291,8 +275,6 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
                     //Creazione record relations                    
                     objRuoli_utente.Url_data_assegnazione = DateTime.Now;
                     objRuoli_utente.Create();
-                    //ReCalculateObjectOwner(objRuoli_utente.Ute_id_utente.Value);               
-                    //Response.Redirect("frm_MSE_RUL_UTE.aspx?MODALITA=EDIT&PROVENIENZA=" + qPROVENIENZA + "&UTE_ID_UTENTE=" + objRuoli_utente.Ute_id_utente + "&RUL_ID_RUOLO=" + objRuoli_utente.Rul_id_ruolo, false);
                 }
                 catch (Exception ex)
                 {
@@ -309,8 +291,6 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
                         objRuoli_utente.Url_data_disabilitazione = DateTime.Now;
 
                     objRuoli_utente.Update();
-                    //ReCalculateObjectOwner(objRuoli_utente.Ute_id_utente.Value); 
-                    //Response.Redirect("frm_MSE_RUL_UTE.aspx?MODALITA=EDIT&PROVENIENZA=" + qPROVENIENZA + "&UTE_ID_UTENTE=" + objRuoli_utente.Ute_id_utente + "&RUL_ID_RUOLO=" + objRuoli_utente.Rul_id_ruolo, false);
                 }
                 catch (Exception ex)
                 {
@@ -319,19 +299,7 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
                 }
                 break;
         }
-
-        //Pulisco e resetto l'oggetto mail.            
-        // string strScript = @"<script type='text/javascript'>                                
-        //                        self.parent.hideEditorDialog();                       
-        //                        parent.frames['frameContent'].document.form1.submit();  
-        //                        </script>";
-
-        //if (!this.ClientScript.IsStartupScriptRegistered("Alert_JS"))
-        //{
-        //    this.ClientScript.RegisterStartupScript(GetType(), "Alert_JS", strScript);
-        //}
-        // Serve per risettare l'abi/disabi del Verso Divisa
-        //GetValues(); 
+ 
         if (!this.ClientScript.IsStartupScriptRegistered("CloseDialog_Js"))
         {
             this.ClientScript.RegisterStartupScript(GetType(), "CloseDialog_Js", this.CloseDialog_Js());
@@ -363,37 +331,6 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
         return percorso;
     }
 
-    //public string ButtonAnnulla_Js()
-    //{
-    //    string MsgUscita = GetValueDizionarioUI("USCITA_SENZA_SALVARE");
-
-    //    //Uscita con controllo sul salvataggio dei dati cambiati
-    //    string js = @"
-    //            <script type='text/javascript'>
-    //function buttonAnnulla()
-    //{ 
-    //               if ($('#form2').FormObserve_changedForm()) 
-    //               {    
-    //                    if (confirm('" + @MsgUscita + @"'))
-    //                    {                                                           
-    //                        self.parent.hideEditorDialog();                        
-    //                    }
-    //                    else{
-    //                        return false;
-    //                    }
-    //               } 
-    //               else 
-    //               {                            
-    //                    self.parent.hideEditorDialog(); 
-    //                    $('#ButtonRuoli',parent.frames['frameContent'].document).click();
-    //               }
-    //               return true;
-    //}
-    //</script>";
-
-    //    return js;
-    //}
-
     public string CloseDialog_Js()
     {
         string js = @"
@@ -411,7 +348,7 @@ public partial class Web_Ruoli_frm_MSE_RUL_UTE : BasePage
     {
         try
         {
-            //ButtonAnnulla.Attributes["onClick"] = "javascript:return buttonAnnulla();";
+            // ...
         }
         catch (Exception ex)
         {

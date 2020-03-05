@@ -75,20 +75,7 @@ namespace GestioneUtenti.Web.Common
                     LinkBackAdmin.Visible = true;
             }
             
-            dizionarioPermessiTop = (Dictionary<string, int>)Session["dizionarioPermessi"];
-
-            //if (dizionarioPermessiTop["PSW"] < objUtilita.AccessDelete)
-            //{
-            //    liCambioPassword.Visible = false;
-            //    liCambioPasswordSeparator.Visible = false;
-            //}
-
-            //if (dizionarioPermessiTop["OUT"] < objUtilita.AccessDelete)
-            //{
-            //    liLogout.Visible = false;
-            //}
-
-            
+            dizionarioPermessiTop = (Dictionary<string, int>)Session["dizionarioPermessi"];            
         }
         #endregion
 

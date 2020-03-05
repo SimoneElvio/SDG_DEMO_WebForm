@@ -77,11 +77,6 @@ function viewSubBrowser(acronimo) {
 
         var src = '';
         switch (acronimo) {
-            case 'TRY':
-                $('#ButtonTravelPolicy').addClass('tabSelected');
-                $('#ButtonTravelPolicy').removeClass('tabNoSelected');
-                src = '../TravelPolicy/frm_MSE_TRY.aspx?ID_TABELLA_PADRE=' + $('#hIdUtente').val() + '&TABELLA_PADRE=UTENTE&CLI_ID_CLIENTE=' + $('#hIdCliente').val() + '&MODALITA=EDIT';
-                break;
             case 'PAU':
                 $('#ButtonProcessoAutorizzativo').addClass('tabSelected');
                 $('#ButtonProcessoAutorizzativo').removeClass('tabNoSelected');

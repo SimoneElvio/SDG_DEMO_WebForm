@@ -181,29 +181,10 @@
     <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.js" />
     <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.min.js" />
     <Content Include="Web\assets\plugins\bootstrap\js\popper.min.js" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinFlat.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinHTML5.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinModern.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinNice.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\ion.rangeSlider.skinSimple.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\css\normalize.css" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-flat.png" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-modern.png" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-nice.png" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\img\sprite-skin-simple.png" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider-init.js" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider.js" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\js\ion-rangeSlider\ion.rangeSlider.min.js" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\js\vendor\jquery-1.12.3.min.js" />
     <Content Include="Web\assets\plugins\jquery-mask\jquery.mask.js" />
     <Content Include="Web\assets\plugins\jqueryui\datepicker-it.js" />
     <Content Include="Web\assets\plugins\jquery\jquery191.min.js" />
     <Content Include="Web\assets\plugins\styleswitcher\jQuery.style.switcher.js" />
-    <Content Include="Web\assets\plugins\sweetalert\jquery.sweet-alert.custom.js" />
-    <Content Include="Web\assets\plugins\sweetalert\sweetalert-dev.js" />
-    <Content Include="Web\assets\plugins\sweetalert\sweetalert.css" />
-    <Content Include="Web\assets\plugins\sweetalert\sweetalert.min.js" />
     <Content Include="Web\blank.html" />
     <Content Include="Web\Common\Script.ascx" />
     <Content Include="Web\CrossGruppiClienteUtenti\frm_MSB_CGC.aspx" />
@@ -675,14 +656,6 @@
     <Compile Include="Web\WebFormTestWs.aspx.designer.cs">
       <DependentUpon>WebFormTestWs.aspx</DependentUpon>
     </Compile>
-    <Compile Include="XmlData\TRF_Schema.cs">
-      <DependentUpon>TRF_Schema.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="XmlData\TRF_Schema.Designer.cs">
-      <DependentUpon>TRF_Schema.xsd</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\Settings.settings">
@@ -705,19 +678,6 @@
     <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.bundle.min.js.map" />
     <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.js.map" />
     <Content Include="Web\assets\plugins\bootstrap\js\bootstrap.min.js.map" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\.DS_Store" />
-    <Content Include="Web\assets\plugins\ion-rangeslider\js\.DS_Store" />
-    <None Include="XmlData\TRF_Schema.xsc">
-      <DependentUpon>TRF_Schema.xsd</DependentUpon>
-    </None>
-    <None Include="XmlData\TRF_Schema.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>TRF_Schema.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="XmlData\TRF_Schema.xss">
-      <DependentUpon>TRF_Schema.xsd</DependentUpon>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <WebReferences Include="Web References\" />

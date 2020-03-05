@@ -1,7 +1,7 @@
 #region Testatina
 // ---------------------------------------------------------------------------
 // Progetto:    Gestone Utenti
-// Nome File:   frm_MSE_REL_PG.aspx
+// Nome File:   frm_MSE_UTE.aspx
 //
 // Namespace:   SDG.GestioneUtenti
 // Descrizione: Classe di CodeBehind della pagina
@@ -148,18 +148,10 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
             DropDownListGruppoCliente.DataValueField = "GRC_ID_GRUPPI_CLIENTE";
             DropDownListGruppoCliente.DataTextField = "GRC_NOME";
             DropDownListGruppoCliente.DataBind();
-
-
-            //////////////DropDownListWorkflow.DataSource = Workflow.List("");
-            //////////////DropDownListWorkflow.DataValueField = "WRF_ID_WORKFLOW";
-            //////////////DropDownListWorkflow.DataTextField = "WRF_DESCRIZIONE";
-            //////////////DropDownListWorkflow.DataBind();
-            //////////////DropDownListWorkflow.Items.Insert(0, new ListItem("", ""));
-
+            
             //Button
             ButtonSalva.Text = GetValueDizionarioUI("SALVA");
             ButtonAnnulla.Text = GetValueDizionarioUI("USCITA");
-            ButtonInviaPwd.Text = GetValueDizionarioUI("INVIA_PASSWORD");
            
             //Lookup
 
@@ -167,12 +159,10 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
             switch (qMODALITA)
             {
                 case "NEW":
-                    ButtonInviaPwd.Enabled = false;
                     TextMatricola.Value = "N.a";
                     break;
                 case "VIEW":
                     BindData();
-                    // ButtonAnnulla.Enabled = true;
                     break;
                 case "EDIT":
                     BindData();
@@ -190,11 +180,7 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
         // Campi read-only
         TextDataAggiornamento.Disabled = true;
         TextDataUltimoAccesso.Disabled = true;
-
-        //if (!this.ClientScript.IsStartupScriptRegistered("ButtonAnnulla_Js"))
-        //{
-            //this.ClientScript.RegisterStartupScript(GetType(), "ButtonAnnulla_Js", this.ButtonAnnulla_Js());
-        //}
+        
     }
     #endregion
 
@@ -298,11 +284,6 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
             objUtente.Cdc_id_centro_di_costo = Convert.ToInt32(DropDownListCDCAppartenenza.SelectedValue);
         else
             objUtente.Cdc_id_centro_di_costo = SqlInt32.Null;
-
-        if (DropDownListWorkflow.SelectedValue != "")
-            objUtente.Wrf_id_workflow = Convert.ToInt32(DropDownListWorkflow.SelectedValue);
-        else
-            objUtente.Wrf_id_workflow = SqlInt32.Null;
 
         if (objUtente.Ute_password.CompareTo(TextPassword.Value) != 0)
         {
@@ -544,96 +525,6 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
         }
     }
 
-    protected void ButtonInviaPwd_Click(object sender, EventArgs e)
-    {
-        string msg = string.Empty;
-        string strChangePwdOK = getDizionarioUI("CAMBIO_PASSWORD_OK");
-        string strChangePwdKO = getDizionarioUI("CAMBIO_PASSWORD_KO");
-        string PwdResetNotExist = getDizionarioUI("PWD_RESET_NOT_EXIST");
-
-        try
-        {
-            SetValues();            
-            //objSistema.Read();
-            //Ricavo dal cliente la password di default per settarla, se c'è procedo con il reset e il reinvio,
-            //altrimenti avviso l'utente che la password non è stata settata e che bisogna settarla prima di mandarla.
-            objClienti.Read(Convert.ToInt32(DropDownListCliente.SelectedValue), qCultureInfoName);
-            if (objClienti.Cli_password_reset.ToString() != "" && !objClienti.Cli_password_reset.IsNull)
-            {
-                //objUtente.Ute_password = EncryptPwd(objClienti.Cli_password_reset.ToString());
-                string password = objUtilita.GenerateRandomPassword();
-                objUtente.Ute_password = EncryptPwd(password);
-                objUtente.Ute_flag_pwd_inviata = 1;
-                objUtente.Ute_data_invio_pwd = DateTime.Now;
-                objUtente.Ute_expiration_date = DateTime.Today.AddDays(-1);
-                objUtente.Update();
-
-                string emailMittente = ConfigurationManager.AppSettings["EmailMittente"];
-                MailMessage email = new MailMessage();
-                MailAddress oFrom = new MailAddress(emailMittente);
-                email.From = oFrom;                
-                email.IsBodyHtml = true;
-                email.Priority = MailPriority.Normal;
-                email.Subject = "Invio Password";
-                email.To.Clear();
-                email.To.Add(objUtente.Ute_email.ToString());
-
-                msg += "<p>Il link per accedere all'applicazione &egrave; : <strong><a href='" + objClienti.Cli_link_taf.ToString() + "'>" + objClienti.Cli_link_taf.ToString() + "</a></strong></p>";
-                msg += "<p>La sua UserId &egrave; : <strong>" + TextUser.Value + "</strong></p>";
-                msg += "<p>La sua Password &egrave; : <strong>" + password + "</strong></p>";
-                email.Body = Sistema.FormattaEmailPwd(msg);
-                Sistema.SendEmail(email);
-                //Pulisco e resetto l'oggetto mail.            
-                string strScript = @"<script type='text/javascript'>
-                                alert('" + strChangePwdOK + @"');
-                                self.parent.hideEditorDialog();                       
-                                parent.frames['frameContent'].refreshBrowser();
-                                </script>";
-
-                if (!this.ClientScript.IsStartupScriptRegistered("Alert_JS"))
-                {
-                    this.ClientScript.RegisterStartupScript(GetType(), "Alert_JS", strScript);
-                }
-            }            
-            else
-            {            
-                string strScript = @"<script type='text/javascript'>
-                                alert('" + PwdResetNotExist + @"');                                
-                                </script>";
-
-                if (!this.ClientScript.IsStartupScriptRegistered("Alert_JS"))
-                {
-                    this.ClientScript.RegisterStartupScript(GetType(), "Alert_JS", strScript);
-                }
-            
-            }            
-        }
-        catch (Exception ex)
-        {
-            string strScript = "<script type='text/javascript'>alert('" + strChangePwdKO + "')</script>";
-            if (!this.ClientScript.IsStartupScriptRegistered("Alert_JS"))
-            {
-                this.ClientScript.RegisterStartupScript(GetType(), "Alert_JS", strScript);
-            }
-            // Gestione messaggistica all'utente e trace in DB dell'errore
-            ExceptionPolicy.HandleException(ex, "Propagate Policy");
-        }                
-    }    
-
-    void SetReadOnlyBTC()
-    {
-        if (Session["ACRONIMO_INSTALLAZIONE"].ToString() == "BTC")
-        {
-            divAutorizzazioneAutomatica.Visible = false;
-            divUnitaContabile.Visible = false;
-            divCategoria.Visible = false;
-            divReparto.Visible = false;
-            divAvvisoWorkflow.Visible = false;
-            LabelTipoUtente.Visible = false;
-            TextTipoUtente.Visible = false;            
-        }    
-    }
-
     void DropDownListCliente_SelectedIndexChanged(object sender, EventArgs e)
     {
         try
@@ -698,9 +589,7 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
     {
         try
         {
-            // ButtonAnnulla.Attributes["onClick"] = "javascript:return buttonAnnulla()";
-            //Nascondo i campi che non mi serve visualizzare per la versione BTC
-            SetReadOnlyBTC();
+            // ...
         }
         catch (Exception ex)
         {

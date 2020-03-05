@@ -60,8 +60,7 @@
                                     <div class="col-md-6">
                                         <asp:Button ID="ButtonAnnulla" CssClass="btn btn-secondary m-l-5 pull-right" runat="server" UseSubmitBehavior="False" OnClientClick="parent.refreshBrowser();" />
                                         <asp:Button ID="ButtonSalva" CssClass="btn btn-success m-l-5 pull-right" runat="server" OnClick="ButtonSalva_Click" />
-                                        <asp:Button ID="ButtonInviaPwd" CssClass="btn btn-info m-l-5 pull-right" runat="server" OnClick="ButtonInviaPwd_Click" />
-                                    </div>
+                                     </div>
                                 </div>
 
                                 <hr />
