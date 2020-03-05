@@ -17,7 +17,7 @@ Dopo aver effettuato il download del progetto, occorre configurarlo come segue:
 
 ## Configurazione database
 
-Scarica il file .zip dalla cartella ***database*** ed esegui il restore in SQL Server.
+Scarica il file ***Database.zip*** che trovi nella root ed esegui il restore in SQL Server.
 L'utenza di riferimento per accedere al database è ***sdg_sviluppo***
 
 ### Tabelle ###
