@@ -1,4 +1,4 @@
-# SDG_DEMO_WebForm
+!(logo_piccolo_blu.jpg) # SDG_DEMO_WebForm
 
 ## Requisiti software
 
