@@ -1,5 +1,8 @@
 ![logo SDG](logoSDG.jpg) 
-# SDG_DEMO_WebForm
+# WebForm
+
+Il progetto è un estratto di un progetto sviluppato da SDG con le Web Form di Microsoft.
+La struttura del progetto e del codice è la stessa utilizzata in tutti i nostri progetti sviluppati con la stessa tecnologia.
 
 ## Requisiti software
 
