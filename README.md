@@ -1,4 +1,5 @@
-![logo SDG](logoSDG.jpg) # SDG_DEMO_WebForm
+![logo SDG](logoSDG.jpg) 
+# SDG_DEMO_WebForm
 
 ## Requisiti software
 
