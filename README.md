@@ -18,13 +18,14 @@ Dopo aver effettuato il download del progetto, occorre configurarlo come segue:
 ## Configurazione database
 
 Scarica il file ***Database.zip*** che trovi nella root ed esegui il restore in SQL Server.
+
 L'utenza di riferimento per accedere al database è ***sdg_sviluppo***
 
 ### Tabelle ###
 
 Al suo interno troverai le seguenti tabelle. Quelle indicate con * non hanno importanza ai fini del training, mentre le altre sono tabelle che troverai anche in altri nostri progetti, con la stessa struttura.
 
-**Tabella**|**Descrizione**
+**Nome tabella**|**Descrizione**
 -----|-----
 AUDIT| 
 AZIONI|*
