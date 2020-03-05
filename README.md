@@ -14,8 +14,11 @@ Dopo aver effettuato il download del progetto, occorre configurarlo come segue:
 ## Configurazione database
 
 Scarica il file .zip dalla cartella ***database*** ed esegui il restore in SQL Server.
+L'utenza di riferimento per accedere al database è ***sdg_sviluppo***
 
-Al suo interno troverai una serie di tabelle.
+### Tabelle ###
+
+Al suo interno troverai le seguenti tabelle. Quelle indicate con * non hanno importanza ai fini del training, mentre le altre sono tabelle che troverai anche in altri nostri progetti, con la stessa struttura.
 
 **Tabella**|**Descrizione**
 -----|-----
@@ -47,4 +50,15 @@ SISTEMA|Altre configurazioni di base in aggiunta alla tabella CONFIGURATION\_SET
 TESTI\_PAGINE|*
 UTENTE|Anagrafica utenti
 
+### Stored Procedure ###
+
+Nella sezione Stored Procedure sono disponibili per la consultazione le seguenti procedure:
+
+**Procedura**|**Descrizione**
+-----|-----
+spAggiungiFunzionalita|Utilizzata in tutti i progetti per inserire nuove funzionalità senza passare da maschera
+spCheckTravelPolicy|Esempio di elaborazione dati. Effettua dei controlli sui dati salvati in una richiesta viaggio
+spDeleteExpiredLock|Reset dei lock rimasti appesi. Viene chiamata ciclicamente da un job per svuotare le sessioni
+spGetTestoTagged|Esempio di elaborazione dati su tag testuali. Utilizzato nella creazione di mail da inviare ai clienti
+Where_Am_I|Utilizzata in tutti i progetti. Serve per effettuare ricerche di stringhe in tutte le stored procedure del db
 
