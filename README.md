@@ -62,3 +62,27 @@ spDeleteExpiredLock|Reset dei lock rimasti appesi. Viene chiamata ciclicamente d
 spGetTestoTagged|Esempio di elaborazione dati su tag testuali. Utilizzato nella creazione di mail da inviare ai clienti
 Where_Am_I|Utilizzata in tutti i progetti. Serve per effettuare ricerche di stringhe in tutte le stored procedure del db
 
+### Naming convention ###
+
+Le tabelle con funzione di anagrafica hanno solamente il nome che le identifica (UTENTE, RUOLI, CLIENTI, ...)
+
+Le tabelle con funzione di lookup sono precedute dalla parola ***LOOKUP*** (LOOKUP_TIPO_CLIENTE, LOOKUP_TIPO_INDIRIZZO, ...)
+
+Le tabelle con funzione di cross tra due o più tabelle sono precedute dalla parola ***CROSS*** (CROSS_CLIENTE_RUOLI, CROSS_UTENTE_CLIENTE, ...)
+
+I campi delle tabelle iniziano sempre con un triletterale che le identifica:
+- CLI per i clienti
+- UTE per gli utenti
+
+Il triletterale dei campi delle lookup inizia solitamente con la lettera L.
+
+Il triletterale dei campi delle cross inizia solitamente con la lettera C.
+
+In tutte le tabelle sono sempre presenti i seguenti campi:
+- [ACRONIMO]_ID_[NOME_TABELLA]
+- [ACRONIMO]_ID_CREATO_DA
+- [ACRONIMO]_ID_AGGIORNATO_DA
+- [ACRONIMO]_ID_ELIMINATO_DA
+- [ACRONIMO]_DATA_CREAZIONE
+- [ACRONIMO]_DATA_AGGIORNAMENTO
+- [ACRONIMO]_FLAG_ELIMINATO
