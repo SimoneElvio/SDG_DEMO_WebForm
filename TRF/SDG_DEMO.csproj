@@ -404,8 +404,6 @@
     <Compile Include="BusinessObjects\LookupStatoAutorizzazione.cs" />
     <Compile Include="BusinessObjects\Lookup_tipo_documento.cs" />
     <Compile Include="BusinessObjects\Richiedente.cs" />
-    <Compile Include="BusinessObjects\TransazioniRichiesta.cs" />
-    <Compile Include="BusinessObjects\Viaggiatori.cs" />
     <Compile Include="Web References\TRFws\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
