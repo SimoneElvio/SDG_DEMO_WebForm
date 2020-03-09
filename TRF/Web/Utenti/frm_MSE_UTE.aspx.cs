@@ -298,8 +298,9 @@ public partial class Web_Utenti_frm_MSE_UTE : BasePage
         if (CheckBoxStatoUtente.Checked)
             objUtente.Ute_accessi_errati = SqlInt32.Null;
         else
-            objUtente.Ute_accessi_errati = Convert.ToInt32(TextAccessiErrati.Value);
-
+        {
+            objUtente.Ute_accessi_errati = TextAccessiErrati.Value == string.Empty ? 0 : Convert.ToInt32(TextAccessiErrati.Value);
+        }
         objUtente.Ute_tipo_utente = (TextTipoUtente.Value.ToString().Length == 0) ? (SqlString.Null) : (TextTipoUtente.Value);
         
         //TextArea

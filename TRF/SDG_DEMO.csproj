@@ -332,8 +332,6 @@
     <Compile Include="BusinessObjects\Clienti.cs" />
     <Compile Include="BusinessObjects\CrossGruppiClienteUtenti.cs" />
     <Compile Include="BusinessObjects\GruppiCliente.cs" />
-    <Compile Include="BusinessObjects\LookupStatoRichiesta.cs" />
-    <Compile Include="BusinessObjects\LookupStatoServizio.cs" />
     <Compile Include="BusinessObjects\Lookup_societa_cliente.cs" />
     <Compile Include="BusinessObjects\RichiestaViaggio.cs" />
     <Compile Include="BusinessObjects\Utility\Encrypt.cs" />
@@ -346,8 +344,6 @@
     </Compile>
     <Compile Include="BusinessObjects\ConfigurationSetting.cs" />
     <Compile Include="BusinessObjects\ProtectedContentHandler.cs" />
-    <Compile Include="BusinessObjects\CrossUtenteDelegati.cs" />
-    <Compile Include="BusinessObjects\LookupSoluzione.cs" />
     <Compile Include="CustomErrorMessage.aspx.cs">
       <DependentUpon>CustomErrorMessage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -403,18 +399,11 @@
     <Compile Include="BusinessObjects\CrossUtenteCliente.cs" />
     <Compile Include="BusinessObjects\CrossUtenteNotifica.cs" />
     <Compile Include="BusinessObjects\CrossUtenteWorkflow.cs" />
-    <Compile Include="BusinessObjects\Customer.cs" />
     <Compile Include="BusinessObjects\FileBundleHandler.cs" />
     <Compile Include="BusinessObjects\Lock.cs" />
-    <Compile Include="BusinessObjects\LogMessaggiWs.cs" />
     <Compile Include="BusinessObjects\LookupStatoAutorizzazione.cs" />
-    <Compile Include="BusinessObjects\LookupStatoCaricamento.cs" />
-    <Compile Include="BusinessObjects\LookupTipoModulo.cs" />
     <Compile Include="BusinessObjects\Lookup_tipo_documento.cs" />
-    <Compile Include="BusinessObjects\Lookup_titolo.cs" />
-    <Compile Include="BusinessObjects\MailClick.cs" />
     <Compile Include="BusinessObjects\Richiedente.cs" />
-    <Compile Include="BusinessObjects\tracciamentoUpload.cs" />
     <Compile Include="BusinessObjects\TransazioniRichiesta.cs" />
     <Compile Include="BusinessObjects\Viaggiatori.cs" />
     <Compile Include="Web References\TRFws\Reference.cs">
