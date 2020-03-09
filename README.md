@@ -1,7 +1,7 @@
 ![logo SDG](logoSDG.jpg) 
 # WebForm
 
-Il progetto è un estratto di un progetto sviluppato da SDG con le Web Form di Microsoft.
+Il progetto è un estratto di un progetto sviluppato da SDG con le Web Forms di Microsoft.
 La struttura del progetto e del codice è la stessa utilizzata in tutti i nostri progetti sviluppati con la stessa tecnologia.
 
 ## Requisiti software
@@ -10,21 +10,23 @@ La struttura del progetto e del codice è la stessa utilizzata in tutti i nostri
 - SQL Server 2015 (o successivo)
 
 ## Configurazione Visual Studio
-Dopo aver effettuato il download del progetto, occorre configurarlo come segue:
-- Web.config: modificare la stringa di connessione inserendo l'utente e la password configurati per l'accesso
-- nelle proprietà del progetto impostare il framework 4.5
-- settare ___default.aspx___ come pagina di avvio del progetto
+Dopo aver effettuato il download del progetto configuralo come segue:
+- Web.config: modifica il tag CONNECTIONSTRING inserendo l'utente e la password che hai configurato come owner del database
+- nelle proprietà del progetto imposta il framework 4.5
+- setta ___default.aspx___ come pagina di avvio del progetto
 
 ## Configurazione database
 
-Scarica il file .zip dalla cartella ***database*** ed esegui il restore in SQL Server.
+Scarica il file ***Database.zip*** che trovi nella root ed esegui il restore in SQL Server.
+Configura un utente owner del database da utilizzare nella stringa di connessione di Visual Studio.
+
 L'utenza di riferimento per accedere al database è ***sdg_sviluppo***
 
 ### Tabelle ###
 
 Al suo interno troverai le seguenti tabelle. Quelle indicate con * non hanno importanza ai fini del training, mentre le altre sono tabelle che troverai anche in altri nostri progetti, con la stessa struttura.
 
-**Tabella**|**Descrizione**
+**Nome tabella**|**Descrizione**
 -----|-----
 AUDIT| 
 AZIONI|*
