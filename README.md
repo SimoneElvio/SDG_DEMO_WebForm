@@ -6,14 +6,14 @@ La struttura del progetto e del codice è la stessa utilizzata in tutti i nostri
 
 ## Requisiti software
 
-- Visual Studio 2015
-- SQL Server 2015 (o successivo)
+- Visual Studio 2019 Community Edition (o simile)
+- SQL Server Express
 
 ## Configurazione Visual Studio
 Dopo aver effettuato il download del progetto configuralo come segue:
 - Web.config: modifica il tag CONNECTIONSTRING inserendo le seguenti impostazioni:
-- - server=localhost\SQLEXPRESS01;database=SDG-DEMO;Trusted_Connection=True;
-- - providerName="System.Data.SqlClient
+- - connectionString="server=localhost\SQLEXPRESS01;database=SDG-DEMO;Trusted_Connection=True;"
+- - providerName="System.Data.SqlClient"
 - nelle proprietà del progetto imposta il framework 4.5
 - setta ___default.aspx___ come pagina di avvio del progetto
 
