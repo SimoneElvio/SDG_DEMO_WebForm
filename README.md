@@ -11,7 +11,8 @@ La struttura del progetto e del codice è la stessa utilizzata in tutti i nostri
 
 ## Configurazione Visual Studio
 Dopo aver effettuato il download del progetto configuralo come segue:
-- Web.config: modifica il tag CONNECTIONSTRING inserendo l'utente e la password che hai configurato come owner del database
+- Web.config: modifica il tag CONNECTIONSTRING inserendo la seguente stringa di connessione:
+<add name="CONNECTION_STRING" connectionString="server=localhost\SQLEXPRESS01;database=SDG-DEMO;Trusted_Connection=True;"  providerName="System.Data.SqlClient"/>
 - nelle proprietà del progetto imposta il framework 4.5
 - setta ___default.aspx___ come pagina di avvio del progetto
 
